@@ -83,6 +83,22 @@ body
     padding: 1.6875em 4em;
 }
 
+.navbar-text
+{
+    display: none;
+}
+
+.navbar__menu
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
 .navbar__list
 {
     display: flex;
@@ -306,16 +322,12 @@ body
     color: #121212;
 }
 
-.container__content
-{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-}
 .content__block
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 261px);
     gap: 0.59375em;
+    row-gap: 24px;
 }
 
 .content__item
