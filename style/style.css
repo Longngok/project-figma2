@@ -225,7 +225,7 @@ body
 
 .banner
 {
-    background:url(/img/Banner/Banner.png) rgba(18, 18, 18, 0.4) ;
+    background:url(img/Banner/Banner.png) rgba(18, 18, 18, 0.4) ;
       
     background-size: cover;
     height: 38.5em;
