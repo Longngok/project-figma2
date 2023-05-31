@@ -620,13 +620,13 @@ body
 
 .select__list--width
 {
-    width: 92px;
+    width: 5.75em;
 }
 
 .footer-pay__icon
 {
     box-sizing: border-box;
     display: flex;
-    gap: 30px;
-    padding-top: 13px;
+    gap: 1.875em;
+    padding-top: 0.8125em;
 }
