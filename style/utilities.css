@@ -1,0 +1,94 @@
+html
+{
+    font-size: 10px;
+}
+
+.container
+{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.t-decor
+{
+    text-decoration: none;
+}
+
+.l-style
+{
+    list-style-type: none;
+}
+
+.d-flex
+{
+    display: flex;
+}
+.a-item
+{
+    align-items: center;
+}
+
+.d-grid
+{
+    display: grid;
+}
+
+.f-weight
+{
+    font-weight: var(--font-weight);
+}
+
+.l-height--150
+{
+    line-height: var(--line-height-150);
+}
+
+.l-height--172
+{
+    line-height: var(--line-height-172);
+}
+
+.l-spacing--2
+{
+    letter-spacing: var(--letter-spacing-002);
+}
+
+.l-spacing--4
+{
+    letter-spacing: var(--letter-spacing-004);
+}
+
+.m-ver--64
+{
+    margin: 6.4rem auto;
+}
+
+.m-hor--64
+{
+    margin: auto 6.4rem;
+}
+
+.f-gap
+{
+    gap: 6.4rem;
+}
+
+.c--grey
+{
+    color: var(--color-grey);
+}
+
+.c--black
+{
+    color: var(--color-black);
+}
+
+.c--r-black
+{
+    color:var(--color-r-black)
+}
+
+.c--white
+{
+    color: var(--color-white);
+}

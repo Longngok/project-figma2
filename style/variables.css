@@ -1,0 +1,28 @@
+:root
+{
+    --color-grey: #D0D0D0;
+    --color-black:  #121212;
+    --color-r-black: rgba(18, 18, 18, 0.75);
+    --color-white:  #FFFFFF;
+
+    --font-weight: 400;
+
+    --root-font-size: 1rem;
+
+    --font-size-10: var(--root-font-size);
+    --font-size-13: calc(1.3 * var(--root-font-size));
+    --font-size-14: calc(1.4 * var(--root-font-size));
+    --font-size-16: calc(1.6 * var(--root-font-size));
+    --font-size-18: calc(1.8 * var(--root-font-size));
+    --font-size-20: calc(2 * var(--root-font-size));
+    --font-size-24: calc(2.4 * var(--root-font-size));
+    --font-size-30: calc(3 * var(--root-font-size));
+    --font-size-40: calc(4 * var(--root-font-size));
+    --font-size-52: calc(5 * var(--root-font-size));
+
+    --line-height-150: 150%;
+    --line-height-172: 172%;
+
+    --letter-spacing-002: 0.002rem;
+    --letter-spacing-004: 0.004rem;
+}
