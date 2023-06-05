@@ -124,7 +124,7 @@ body
 
 .banner__item
 {
-    background-image: url(../img/Banner/Banner.png);
+    background: url(../img/Banner/Banner.png);
     background-size: cover;
 
     height: 61.6rem;
