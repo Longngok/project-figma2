@@ -112,7 +112,7 @@
 
     .banner__item
     {
-        background-image: url("../img/Banner/Frame101.png");
+        background-image: url(../img/Banner/Frame101.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
