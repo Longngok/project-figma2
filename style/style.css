@@ -37,8 +37,6 @@ body
     right: 0;
     left: 0;
     z-index: 999;
-    
-    box-sizing: border-box;
 
     background-color: var(--color-white);
 }
@@ -52,6 +50,7 @@ body
 {
     justify-content: space-between;
 
+    box-sizing: border-box;
     padding: 1.6rem 6.4rem;
 }
 
@@ -125,7 +124,7 @@ body
 
 .banner__item
 {
-    background: url("/img/Banner/Banner.png");
+    background-image: url("/img/Banner/Banner.png");
     background-size: cover;
 
     height: 61.6rem;
@@ -291,6 +290,18 @@ body
 {
     width: 70.467rem;
     height: 52.1rem;
+}
+
+.stock__img3
+{
+    position: relative;
+}
+
+.stock__item-tags
+{
+    position: absolute;
+    bottom: 2.4rem;
+    left: 2.4rem;
 }
 
 .stock__btn {

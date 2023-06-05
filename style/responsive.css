@@ -203,7 +203,10 @@
         height: 18.6rem;
     }
 
-    .stock
+    .stock__img--r-warp
+    {
+        height: 23.5rem;
+    }
 
     .stock__message
     {
