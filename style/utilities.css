@@ -23,9 +23,20 @@ html
 {
     display: flex;
 }
+
+.d-flex--cl
+{
+    flex-direction: column;
+}
+
 .a-item
 {
     align-items: center;
+}
+
+.j-content
+{
+    justify-content: center;
 }
 
 .d-grid
@@ -36,6 +47,10 @@ html
 .f-weight
 {
     font-weight: var(--font-weight);
+}
+.f-style
+{
+    font-style: normal;
 }
 
 .l-height--150
@@ -86,6 +101,11 @@ html
 .c--r-black
 {
     color:var(--color-r-black)
+}
+
+.c--black2
+{
+    color: var(--color-black2);
 }
 
 .c--white
