@@ -1,12 +1,6 @@
 html
 {
-    font-size: 10px;
-}
-
-.container
-{
-    width: 120rem;
-    margin: 0 auto;
+    font-size: 62.5%;
 }
 
 .t-decor
@@ -71,16 +65,6 @@ html
 .l-spacing--4
 {
     letter-spacing: var(--letter-spacing-004);
-}
-
-.m-ver--64
-{
-    margin: 6.4rem auto;
-}
-
-.m-hor--64
-{
-    margin: auto 6.4rem;
 }
 
 .f-gap

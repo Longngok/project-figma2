@@ -3,11 +3,31 @@
     padding: 0;
 }
 
+.container
+{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+#menu {
+    display: none;
+}
+
 body
 {
     margin: 0;
 
     font-family: 'Assistant', sans-serif;
+}
+
+.m-ver--64
+{
+    margin: 6.4rem 0;
+}
+
+.m-hor--64
+{
+    margin: 0 6.4rem;
 }
 
 .nav--style
@@ -19,7 +39,6 @@ body
     z-index: 999;
     
     box-sizing: border-box;
-    padding: 1.6rem 6.4rem;
 
     background-color: var(--color-white);
 }
@@ -32,6 +51,8 @@ body
 .nav__list--style
 {
     justify-content: space-between;
+
+    padding: 1.6rem 6.4rem;
 }
 
 .navbar__list
@@ -49,97 +70,46 @@ body
     margin-right: 5.1rem;
 }
 
+.nav__item {
+    position: relative;
+}
 
 .navbar__sub-menu
 {
+    box-sizing: border-box;
+    padding: 3.2rem 0 3.2rem 1.6rem;
+    
+    background: var(--color-white);
+
+    width: 19.7rem;
+
     position: absolute;
-    top: 50px;
+    top: 2rem;
+    left: -1.7rem;
 
-    display: none;
-}
-
-.navbar__item--sub-menu:hover .navbar__sub-menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 32px 16px;
-    gap: 24px;
-
-    background: #FFFFFF;
-
-    border: 1px solid #D0D0D0;
+    gap: 2.4rem;
 
     box-sizing: border-box;
-    width: 197px;
 
-    max-height: 300px;
-}
-
-.navbar__item {
-    position: relative;
-  }
-  
-.navbar__item::after 
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #000;
-    transition: width 0.3s ease;
-  }
-  
-.navbar__item:hover::after 
-{
-    width: 100%;
-    animation: slideIn 0.3s linear forwards;
-}
-  
-@keyframes slideIn 
-{
-    from {
-      left: 0;
-      width: 0;
-    }
-    to {
-      left: 0;
-      width: 100%;
-    }
-}
-
-.navbar__search
-{
     display: none;
 }
 
-
-.navbar__search {
-    display: none;
-    position: absolute;
-
-    box-sizing: border-box;
-    padding: 10px;
-    top: 22px;
-    right: 193px;
-    height: 30px;
-    line-height: inherit;
-
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.nav__item:hover .navbar__sub-menu
+{
+   display: flex;
 }
 
-.navbar__item2:hover .navbar__search 
+
+.nav__icon
 {
-    display: flex;
+    margin-left: 1.36rem;
 }
 
 .nav-icon
 {
-    gap: 2.615rem;
-
-    align-items: center;
+    gap: 3.6rem;
 }
 
 .nav__icon2
@@ -155,7 +125,7 @@ body
 
 .banner__item
 {
-    background:url("/img/Banner/Banner.png");
+    background: url("/img/Banner/Banner.png");
     background-size: cover;
 
     height: 61.6rem;
@@ -312,8 +282,10 @@ body
 
 .stock__item2
 {
+    flex-direction: column;
     gap: 1rem;
 }
+
 
 .stock__img
 {
@@ -377,52 +349,43 @@ body
 {
     border-top: 1px #D0D0D0 solid;
 }
-.footer
-{
-    margin: 4em;
-}
 
 .footer__block
 {
-    display: flex;
-    gap: 2.5em;
-    margin: 0 2.5625em;
+    gap: 4rem;
+    box-sizing: border-box;
+    padding: 6.4rem 4rem;
 }
 
 .footer__list
 {
-    width: 18.958em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    width: 30.333rem;
+
+    gap: 1.6rem;
 }
 
 .footer__list-title
 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     line-height: 116%;
 
-    color: #121212;
-
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8rem;
 }
 
 .footer__tags
 {
-    color: rgba(18, 18, 18, 0.75);
+    color: var(--color-r-black)
 }
 
 .footer__logo
 {
-    width: 5.5em;
-    height: 1.1875em;
+    width: 8.8rem;
+    height: 1.9rem;
 }
 
 .footer__contact
 {
-    margin: 4em 0;
+    margin: 6.4em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -443,77 +406,56 @@ body
 #email__Input
 {
     box-sizing: border-box;
-    width: 331px;
-    height: 48px;
-    padding: 14px 16px;
+    width: 33.1rem;
+    height: 4.8rem;
+    padding: 1.4rem 1.6rem;
 
     border: 1px solid #7D7D7D;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 15px;
-
-    letter-spacing: 0.04em;
-
-    color: rgba(18, 18, 18, 0.75);
 }
 
 .footer__confirm
 {
     position: absolute;
-    right: 14px;
-    top: 19px;
+    right: 1.4rem;
+    top: 1.9rem;
 }
 
 .footer__icon
 {
-    display: flex;
-    gap: 1.5625em;
-    align-items: center;
+    gap: 2.4rem;
 }
 
 .footer-pay__content
 {
-    padding: 4em;
-    display: flex;
+    margin: 6.4rem;
     justify-content: space-between;
 }
 
 .footer-pay__button
 {
-    display: flex;
-    gap: 24px;
+    gap: 2.4rem;
 }
 
 .footer-pay__block
 {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    gap: 1.2rem;
 }
 
 .footer-pay__tags
 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: var(--font-size-13);
+    line-height: 1.7rem;
 
     letter-spacing: 0.03em;
-
-    color: rgba(18, 18, 18, 0.75);
 }
 
 .select__list
 {
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
-    width: 139px;
+    width: 13.9rem;
     justify-content: space-between;
-    align-items: center;
-    padding: 11px;
+    padding: 1.1rem;
 
     border: 1px solid #7D7D7D;
 
@@ -525,18 +467,17 @@ body
 .select__list:hover {
   outline: none;
   border-color: #555;
-  box-shadow: 0 0 5px #555;
+  box-shadow: 0 0 0.5rem #555;
 }
 
 .select__list--width
 {
-    width: 5.75em;
+    width: 9.2rem;
 }
 
 .footer-pay__icon
 {
     box-sizing: border-box;
-    display: flex;
-    gap: 1.875em;
-    padding-top: 0.8125em;
+    gap: 2.6rem;
+    padding-top: 1.28rem;
 }
