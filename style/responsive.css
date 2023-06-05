@@ -112,7 +112,7 @@
 
     .banner__item
     {
-        background-image: url("/img/Banner/Frame101.png");
+        background-image: url("img/Banner/Frame101.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -180,6 +180,16 @@
     {
         width: 17rem;
         height: 17rem;
+    }
+
+    .stock__img2
+    {
+        order: 2;
+    }
+
+    .stock__img3
+    {
+        order: 1;
     }
 
     .stock__content
