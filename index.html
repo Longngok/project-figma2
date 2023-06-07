@@ -8,29 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/variables.css">
     <link rel="stylesheet" href="style/responsive.css">
     <link rel="stylesheet" href="style/utilities.css">
-    <link rel="stylesheet" href="style/variables.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="nav--style">
             <div class="d-flex nav--style-rp">
-                <span class="container f-style f-weight l-height--150 l-spacing--2 nav__text nav__text--style">Free shipping available on all orders!</span>
+                <span class="container font--ws l-spacing--2 nav__text nav__text--style">Free shipping available on all orders!</span>
                 <div class="container d-flex nav__list--style">
                     <a class="nav__text m-menu" onclick="toggleMenu()"><img src="img/icon/m-menu.png" alt=""></a>
-                    <ul id="menu" class="d-flex d-flex--cl l-style sub__menu--rp">
+                    <ul id="menu" class="d-flex d-flex--cl l-style--none sub__menu--rp">
                         <li><button onclick="hideMenu()"><img class="navbar__close-btn--rp" src="img/icon/close.png" alt=""></button></li>
                         <li>
                             <ul class="d-flex d-flex--cl navbar__sub-menu--rp">
-                                <ul class="l-style f-style d-flex d-flex--cl navbar__sub-menu--rp-content">
+                                <ul class="l-style--none f-style d-flex d-flex--cl navbar__sub-menu--rp-content">
                                     <li><a class="t-decor c--black d-flex sub__item" href="">Bag <img src="img/stock/Vector.png" alt=""></a></li>
                                     <li><a class="t-decor c--black d-flex sub__item" href="">Shoe <img src="img/stock/Vector.png" alt=""></a></li>
                                     <li><a class="t-decor c--black sub__item" href="">Lookbook</a></li>
                                 </ul>
 
-                                <ul class="l-style navbar__sub-menu--rp-footer d-flex d-flex--cl">
+                                <ul class="l-style--none navbar__sub-menu--rp-footer d-flex d-flex--cl">
                                     <li><a class="t-decor d-flex a-item f-style f-weight c--black l-height--150 l-spacing--2 login--btn" href="">
                                         <img class="sub__img" src="img/icon/vector2.png" alt="">
                                         Login
@@ -47,7 +47,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="d-flex f-weight l-spacing--2 c--black l-style l-height--150 l-spacing--2 navbar__list">
+                    <ul class="d-flex f-weight l-spacing--2 c--black l-style--none l-height--150 l-spacing--2 navbar__list">
                         <li class=".nav__logo-wrapper"><a href="index.html">
                             <img class="nav__logo" src="img/icon/Dawn-logo.png" alt="logo"></a>
                         </li>
@@ -77,10 +77,10 @@
                             </ul>
                         </li>
 
-                        <li><a class="t-decor d-none" href="">Lookbook</a></li>
+                        <li><a class="t-decor--none d-none" href="">Lookbook</a></li>
                     </ul>
 
-                    <ul class="d-flex c--black l-style nav-icon">
+                    <ul class="d-flex c--black l-style--none nav-icon">
                         <li class="navbar__item2"><img class="nav__icon2" src="img/icon/Union.png" alt="search-icon"></li>
                         <li class="d-none"><a href=""><img class="nav__icon2" src="img/icon/vector2.png" alt="account-icon"></a></li>
                         <li><a href=""><img class="nav__icon2" src="img/icon/Vector.png" alt="cart-icon"></a></li>
@@ -92,29 +92,29 @@
 
     <main>
         <section class="banner">
-            <div class="container d-flex a-item j-content banner__item ">
-                <div class="d-flex d-flex--cl a-item f-style banner__block c--white">
-                    <h1 class="banner__headline--style f-weight">Industrial design meets fashion</h1>
-                    <p class="f-weight l-height--172 l-spacing--4 banner__des--style l-spacing--4">Atypical leather goods</p>
-                    <a class="t-decor f-weight l-spacing--4 banner__link--style c--white" href="">Add to cart</a>
+            <div class="container d-flex a-item--center j-content--center banner__item ">
+                <div class="d-flex d-flex--cl a-item--center font-ws banner__block c-inverse-text">
+                    <h1 class="font--ws heading0">Industrial design meets fashion</h1>
+                    <p class="font-ws body1 l-spacing--4 banner__des--style l-spacing--4">Atypical leather goods</p>
+                    <a class="t-decor--none font-ws c-inverse-text l-spacing--4 banner__link--style button-text" href="">Add to cart</a>
                 </div>
             </div>
         </section>
 
         <section class="content">
             <div class="container">
-                <div class="d-flex d-flex--cl a-item j-content f-style c--black content__describe">
-                    <h2 class="f-weight content__headline">Obsessive Attention. Intelligent Effort.</h2>
-                    <p class="f-weight l-height--172 l-spacing--4 l-spacing--4 content__des">Functional handbags made of luxurious and honest materials to improve people's lives in small but mighty ways.</p>
+                <div class="d-flex d-flex--cl a-item--center j-content--center c-default-text content__describe">
+                    <h2 class="font--ws heading1 heading-lh">Obsessive Attention. Intelligent Effort.</h2>
+                    <p class="font--ws body1">Functional handbags made of luxurious and honest materials to improve people's lives in small but mighty ways.</p>
                 </div>
 
-                <div class="d-grid content__block m-hor--64 f-style f-weight c--black2">
+                <div class="d-grid content__block m-hor--64 font--ws c-default-text">
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Small</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Small</span>
+                        <div class="d-flex container__price body1">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
@@ -123,8 +123,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Bo Soft Strap</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Bo Soft Strap</span>
+                        <div class="d-flex container__price body1">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
@@ -133,8 +133,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Small</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Small</span>
+                        <div class="d-flex container__price body1">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
@@ -143,8 +143,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Bo Soft Strap</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Bo Soft Strap</span>
+                        <div class="d-flex container__price body1">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
@@ -153,8 +153,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image3.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Small</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Small</span>
+                        <div class="d-flex container__price body1">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
@@ -163,8 +163,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image4.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Bo Soft Strap</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Bo Soft Strap</span>
+                        <div class="d-flex container__price body1">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
@@ -173,8 +173,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image5.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Large</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Large</span>
+                        <div class="d-flex container__price body1">
                             <span>$615.00 CAD</span>
                         </div>
                     </div>
@@ -182,10 +182,10 @@
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image6.png" alt="hinh-anh-san-pham"></a>
-                            <span class="sale__btn">Sale</span>
+                            <span class="sale__btn caption1 c-inverse-text">Sale</span>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Storml</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Storml</span>
+                        <div class="d-flex container__price body1">
                             <span class="content__oldprice">$545.00 CAD</span>
                             <span>$195.00 CAD</span>
                         </div>
@@ -195,8 +195,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image7.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Small</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Small</span>
+                        <div class="d-flex container__price body1">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
@@ -206,10 +206,10 @@
                             <div class="container__img">
                                 <a href=""><img class="content__img" src="img/content/image8.png" alt="hinh-anh-san-pham"></a>
                             </div>
-                            <span class="sale__btn">Sale</span>
+                            <span class="sale__btn caption1 c-inverse-text">Sale</span>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Storml</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Storml</span>
+                        <div class="d-flex container__price body1">
                             <span class="content__oldprice">$545.00 CAD</span>
                             <span>$195.00 CAD</span>
                         </div>
@@ -219,8 +219,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image9.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Bo Soft Strap</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Bo Soft Strap</span>
+                        <div class="d-flex container__price body1">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
@@ -229,8 +229,8 @@
                         <div class="container__img">
                             <a href=""><img class="content__img" src="img/content/image10.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="content__tags l-height--150 l-spacing--2">Hobo Large</span>
-                        <div class="d-flex container__price l-height--172 l-spacing--4">
+                        <span class="body2">Hobo Large</span>
+                        <div class="d-flex container__price body1">
                             <span>$615.00 CAD</span>
                         </div>
                     </div>
@@ -240,45 +240,50 @@
 
         <section class="stock m-ver--64">
             <div class="container">
-                <div class="m-hor--64 f-style">
-                    <h2 class="f-weight stock__headline">Back in stock</h2>
-                    <div class="d-flex d-flex--cl c--black">
-                        <div class="d-flex stock__content">
-                            <div class="d-flex d-flex--cl stock__item">
-                                <img class="stock__img2" src="img/stock/Rectangle1.png" alt="hinh-anh-san-pham">
-                                <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor">Bags <img src="img/stock/Vector.png" alt=""></a>
+                <div class="m-hor--64 font--ws c-default-text">
+                    <h2 class="stock__headline font--ws heading2 heading-lh">Back in stock</h2>
+                    <div class="d-flex stock__content">
+                        <div class="d-flex d-flex--cl stock__item">
+                            <img class="stock__img" src="img/stock/Rectangle1.png" alt="hinh-anh-san-pham">
+                            <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor">Bags <img src="img/stock/Vector.png" alt=""></a>
+                        </div>
+
+                        <div class="d-flex stock__item2">
+                            <div class="d-flex d-flex--cl stock__item stock__img--block">
+                                <img class="stock__img stock__img--r" src="./img/stock/Rectangle2.png" alt="hinh-anh-san-pham">
+                                <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor content__tags--rp">Bags <img src="img/stock/Vector.png" alt=""></a>
                             </div>
 
-                            <div class="d-flex stock__item2">
-                                <div class="d-flex d-flex--cl stock__item stock__img2">
-                                    <img class="stock__img--r" src="./img/stock/Rectangle2.png" alt="hinh-anh-san-pham">
-                                    <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor content__tags--rp">Bags <img src="img/stock/Vector.png" alt=""></a>
-                                </div>
-
-                                <div class="stock__img3">
-                                    <img class="stock__img--r stock__img--r-warp" src="img/stock/Rectangle3.png" alt="">
-                                    <div class="d-flex d-flex--cl content__tags l-height--150 l-spacing--2 stock__item-tags">
-                                        <span class="">Hobo Large</span>
-                                        <span class="">$615.00 CAD</span>
-                                    </div>
+                            <div class="stock__img--block">
+                                <img class="stock__img stock__img--r stock__img--r-warp" src="img/stock/Rectangle3.png" alt="">
+                                <div class="d-flex d-flex--cl content__tags l-height--150 l-spacing--2 stock__item-tags">
+                                    <span class="">Hobo Large</span>
+                                    <span class="">$615.00 CAD</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <img class="m-ver--64 content__vid" src="img/stock/Video.png" alt="video-trailer-san-pham">
+        <section class="m-hor--64">
+            <div class="container iframe-container">
+                <iframe id="video-ifream"width="100%" height="742" src="https://www.youtube.com/embed/ttlEagQOPQ4" title="TRAILER ELLE FASHION SHOW 2022 - DREAM OF NEW BEGINNINGS | ELLE Vietnam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button id="play-button" class="play-button">Play</button>
+            </div>
+        </section>
+                
+        <section class="m-hor--64 m-ver--64">
+            <div class="d-flex stock__message f-style">
+                <div class="d-flex j-content--center a-item--center stock__message-block d-flex--cl">
+                    <img class="stock__deltail-header" src="img/stock/Rectangle15.png" alt="logo">
+                    <p class="banner__des--style stock__des--style l-height--150 f-weight">"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."</p>
+                </div>
 
-                    <div class="d-flex stock__message f-style">
-                        <div class="d-flex j-content a-item stock__message-block d-flex--cl">
-                            <img class="stock__deltail-header" src="img/stock/Rectangle15.png" alt="logo">
-                            <p class="banner__des--style stock__des--style l-height--150 f-weight">"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."</p>
-                        </div>
-
-                        <div class="d-flex j-content a-item stock__message-block d-flex--cl">
-                            <img class="stock__deltail-header" src="img/stock/Rectangle16.png" alt="logo">
-                            <p class="banner__des--style stock__des--style l-height--150 f-weight">"All too often, we're forced to pick: style, or sustainability. Recently, more designers have been making environmental impact a top priority"</p>
-                        </div>
-                    </div>
+                <div class="d-flex j-content--center a-item--center stock__message-block d-flex--cl">
+                    <img class="stock__deltail-header" src="img/stock/Rectangle16.png" alt="logo">
+                    <p class="banner__des--style stock__des--style l-height--150 f-weight">"All too often, we're forced to pick: style, or sustainability. Recently, more designers have been making environmental impact a top priority"</p>
                 </div>
             </div>
         </section>
@@ -341,7 +346,7 @@
                     <div class="d-flex footer-pay__button">
                         <div class="d-flex d-flex--cl footer-pay__block">
                             <span class="f-style f-weight c--r-black footer-pay__tags">Country/region</span>
-                            <select class="d-flex a-item select__list" name="" id="">
+                            <select class="d-flex a-item--center select__list" name="" id="">
                                 <option class="footer-pay__tags" value="1">Canada (CAD $)</option>
                                 <option class="footer-pay__tags" value="2">Canada (CAD $)</option>
                                 <option class="footer-pay__tags" value="3">Canada (CAD $)</option>

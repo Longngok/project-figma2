@@ -3,12 +3,61 @@ html
     font-size: 62.5%;
 }
 
-.t-decor
+.body1
+{
+    font-size: var(--font-size-large);
+    line-height: 1.72;
+}
+
+.body2
+{
+    font-size: var(--font-size-medium);
+    line-height: 1.5;
+}
+
+.caption1
+{
+    font-size: var(--font-size-small);
+    line-height: 1.31;
+}
+
+.button-text
+{
+    font-size: var(--font-size-large);
+    line-height: 0.94;  
+}
+
+.heading0
+{
+    font-size: var(--font-size-h-exlarge);
+}
+
+.heading1
+{
+    font-size: var(--font-size-h-large);
+}
+
+.heading2
+{
+    font-size:  var(--font-size-h-medium);
+}
+
+.heading3
+{
+    font-size: var(--font-size-h-small);
+}
+
+.heading-lh
+{
+    line-height: var(--heading-line-height);
+}
+
+.t-decor--none
 {
     text-decoration: none;
 }
 
-.l-style
+.l-style--none
 {
     list-style-type: none;
 }
@@ -23,12 +72,12 @@ html
     flex-direction: column;
 }
 
-.a-item
+.a-item--center
 {
     align-items: center;
 }
 
-.j-content
+.j-content--center
 {
     justify-content: center;
 }
@@ -38,23 +87,10 @@ html
     display: grid;
 }
 
-.f-weight
+.font--ws
 {
     font-weight: var(--font-weight);
-}
-.f-style
-{
     font-style: normal;
-}
-
-.l-height--150
-{
-    line-height: var(--line-height-150);
-}
-
-.l-height--172
-{
-    line-height: var(--line-height-172);
 }
 
 .l-spacing--2
@@ -67,32 +103,47 @@ html
     letter-spacing: var(--letter-spacing-004);
 }
 
-.f-gap
+.c-background1
 {
-    gap: 6.4rem;
+    color: var(--color-background1);
 }
 
-.c--grey
+.c-background2
 {
-    color: var(--color-grey);
+    color: var(--color-background2);
 }
 
-.c--black
+.c-border-dark
 {
-    color: var(--color-black);
+    color: var(--color-border-dark);
 }
 
-.c--r-black
+.c-border-light
 {
-    color:var(--color-r-black)
+    color: var(--color-border-light);
 }
 
-.c--black2
+.c-accent1
 {
-    color: var(--color-black2);
+    color: var(--color-accent1);
 }
 
-.c--white
+.c-accent2
 {
-    color: var(--color-white);
+    color: var(--color-accent2);
+}
+
+.c-default-text
+{
+    color: var(--color-default-text);
+}
+
+.c-subdued-text
+{
+    color: var(--color-subdued-text);
+}
+
+.c-inverse-text
+{
+    color: var(--color-inverse-text);
 }

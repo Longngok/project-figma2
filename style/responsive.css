@@ -1,7 +1,14 @@
-@media screen and (max-width: 57rem) {
+@media screen and (max-width: 1000px) {
+    :root
+    {
+        --font-size-h-small: calc(1.7 * var(--root-font-size));
+        --font-size-h-medium: calc(2 * var(--root-font-size));
+        --font-size-h-large: calc(3 * var(--root-font-size));
+        --font-size-h-exlarge: calc(4 * var(--root-font-size));
+    }
     .container
     {
-        width: 37.5rem;
+        width: 100%;
     }
 
     .nav--style
@@ -116,7 +123,6 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 37.5rem;
         height: 39.8rem;
     }
 
@@ -164,23 +170,16 @@
 
     .content__block
     {
-        grid-template-columns: repeat(2, 17rem);
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.95rem;
         row-gap: 2.4rem;
     }
 
     .container__img
     {
-        width: 17rem;
-        height: 17rem;
         margin-bottom: 0.5rem;
     }
 
-    .content__img
-    {
-        width: 17rem;
-        height: 17rem;
-    }
 
     .stock__img2
     {
@@ -207,16 +206,11 @@
     {
         flex-direction: row;
     }
-    .stock__img--r
-    {
-        width: 17rem;
-        height: 18.6rem;
-    }
-
-    .stock__img--r-warp
-    {
-        height: 23.5rem;
-    }
+    .stock__item2
+{
+    width: 100%;
+    gap: 1rem;
+}
 
     .stock__message
     {
