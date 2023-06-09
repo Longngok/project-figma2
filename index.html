@@ -17,73 +17,79 @@
     <header>
         <nav class="nav--style">
             <div class="d-flex nav--style-rp">
-                <span class="container font--ws l-spacing--2 nav__text nav__text--style">Free shipping available on all orders!</span>
-                <div class="container d-flex nav__list--style">
-                    <a class="nav__text m-menu" onclick="toggleMenu()"><img src="img/icon/m-menu.png" alt=""></a>
-                    <ul id="menu" class="d-flex d-flex--cl l-style--none sub__menu--rp">
-                        <li><button onclick="hideMenu()"><img class="navbar__close-btn--rp" src="img/icon/close.png" alt=""></button></li>
-                        <li>
-                            <ul class="d-flex d-flex--cl navbar__sub-menu--rp">
+                <span class="container font--ws body2 l-spacing--2 nav__text nav__text--style">Free shipping available on all orders!</span>
+                <div class="container d-flex nav__list--style nav__text">
+                    <a class="nav__text m-menu" onclick="toggleMenu()"><img class="nav__menu" src="img/icon/m-menu.png" alt=""></a>
+                    <div id="menu" class="d-flex d-flex--cl l-style--none sub__menu--rp">
+                        <div><button onclick="hideMenu()"><img class="navbar__close-btn--rp" src="img/icon/close.png" alt=""></button></div>
+                        <div>
+                            <div class="d-flex d-flex--cl navbar__sub-menu--rp">
                                 <ul class="l-style--none f-style d-flex d-flex--cl navbar__sub-menu--rp-content">
-                                    <li><a class="t-decor c--black d-flex sub__item" href="">Bag <img src="img/stock/Vector.png" alt=""></a></li>
-                                    <li><a class="t-decor c--black d-flex sub__item" href="">Shoe <img src="img/stock/Vector.png" alt=""></a></li>
-                                    <li><a class="t-decor c--black sub__item" href="">Lookbook</a></li>
+                                    <li><a class="t-decor--none c-default-text d-flex sub__item" href="">Bag <img class="vector--style" src="img/stock/Vector.png" alt=""></a></li>
+                                    <li><a class="t-decor--none c-default-text d-flex sub__item" href="">Shoe <img class="vector--style" src="img/stock/Vector.png" alt=""></a></li>
+                                    <li><a class="t-decor--none c-default-text sub__item" href="">Lookbook</a></li>
                                 </ul>
 
                                 <ul class="l-style--none navbar__sub-menu--rp-footer d-flex d-flex--cl">
-                                    <li><a class="t-decor d-flex a-item f-style f-weight c--black l-height--150 l-spacing--2 login--btn" href="">
-                                        <img class="sub__img" src="img/icon/vector2.png" alt="">
-                                        Login
+                                    <li><a class="t-decor--none d-flex a-item--center  login--btn" href="">
+                                        <img class="sub__img" src="img/icon/img-person.png" alt="person">
+                                        <span class="font--ws body2 l-spacing--2 c-default-text">Login</span>
                                     </a></li>
-                                    <ul class="l-style d-flex sub__img--flex"> 
-                                        <li><a href=""><img class="sub__img" src="img/footer/img-twitter.png" alt="twitter"></a></li>
-                                        <li><a href=""><img class="sub__img" src="img/footer/img-fb.png" alt="facbook"></a></li>
-                                        <li><a href=""><img class="sub__img" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
-                                        <li><a href=""><img class="sub__img" src="img/footer/img-ins.png" alt="instagram"></a></li>
-                                        <li><a href="https://www.tiktok.com/vi-VN/"><img class="sub__img" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
-                                        <li><a href=""><img class="sub__img" src="img/footer/img-youtube.png" alt="youtube"></a></li>
-                                    </ul>
+                                    <li>
+                                        <ul class="l-style--none d-flex sub__img--flex l-style--none"> 
+                                            <li><a href=""><img class="sub__img" src="img/footer/img-twitter.png" alt="twitter"></a></li>
+                                            <li><a href=""><img class="sub__img" src="img/footer/img-fb.png" alt="facbook"></a></li>
+                                            <li><a href=""><img class="sub__img" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
+                                            <li><a href=""><img class="sub__img" src="img/footer/img-ins.png" alt="instagram"></a></li>
+                                            <li><a href="https://www.tiktok.com/vi-VN/"><img class="sub__img" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
+                                            <li><a href=""><img class="sub__img" src="img/footer/img-youtube.png" alt="youtube"></a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <ul class="d-flex a-item--center font--ws l-style--none c-default-text navbar__list">
+                        <li class=".nav__logo-wrapper">
+                            <a class="a__style" href="index.html">
+                                <img class="nav__logo" src="img/icon/Dawn-logo.png" alt="logo">
+                            </a>
+                        </li>
+                        <li class="d-flex a-item--center nav__item">
+                            <span class="font--ws body2 l-spacing--2 d-none">Bags</span>
+                            <img class="a-item--center nav__icon vector--style d-none" src="img/icon/Vector11.png" alt="icon">
+                            <ul class="l-style--none navbar__sub-menu">
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Shop all</a></li>
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Tote bags</a></li>
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Shoulder bags</a></li>
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Crossbody bags</a></li>
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Top handle bags</a></li>
+                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Mini bags</a></li>
                             </ul>
                         </li>
+
+                        <li class="d-flex a-item--center nav__item">
+                            <span class="font--ws body2 l-spacing--2 d-none">Shoes</span> 
+                            <img class="a-item nav__icon vector--style d-none" src="img/icon/Vector11.png" alt="icon">
+                            <ul class="l-style--none navbar__sub-menu">
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Shop all</a></li>
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Tote bags</a></li>
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Shoulder bags</a></li>
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Crossbody bags</a></li>
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Top handle bags</a></li>
+                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Mini bags</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="t-decor--none d-none body2 c-default-text l-spacing--2" href="">Lookbook</a></li>
                     </ul>
-                    <ul class="d-flex f-weight l-spacing--2 c--black l-style--none l-height--150 l-spacing--2 navbar__list">
-                        <li class=".nav__logo-wrapper"><a href="index.html">
-                            <img class="nav__logo" src="img/icon/Dawn-logo.png" alt="logo"></a>
-                        </li>
-                        <li class="nav__item d-none">
-                            Bags 
-                            <img class="a-item nav__icon" src="img/icon/Vector11.png" alt="icon">
-                            <ul class="l-style navbar__sub-menu ">
-                                <li><a class="t-decor" href="">Shop all</a></li>
-                                <li><a class="t-decor" href="">Tote bags</a></li>
-                                <li><a class="t-decor" href="">Shoulder bags</a></li>
-                                <li><a class="t-decor" href="">Crossbody bags</a></li>
-                                <li><a class="t-decor" href="">Top handle bags</a></li>
-                                <li><a class="t-decor" href="">Mini bags</a></li>
-                            </ul>
-                        </li>
 
-                        <li class="nav__item d-none">
-                            Shoes 
-                            <img class="a-item nav__icon" src="img/icon/Vector11.png" alt="icon">
-                            <ul class="l-style navbar__sub-menu">
-                                <li><a class="t-decor" href="">Shop all</a></li>
-                                <li><a class="t-decor" href="">Tote bags</a></li>
-                                <li><a class="t-decor" href="">Shoulder bags</a></li>
-                                <li><a class="t-decor" href="">Crossbody bags</a></li>
-                                <li><a class="t-decor" href="">Top handle bags</a></li>
-                                <li><a class="t-decor" href="">Mini bags</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a class="t-decor--none d-none" href="">Lookbook</a></li>
-                    </ul>
-
-                    <ul class="d-flex c--black l-style--none nav-icon">
-                        <li class="navbar__item2"><img class="nav__icon2" src="img/icon/Union.png" alt="search-icon"></li>
-                        <li class="d-none"><a href=""><img class="nav__icon2" src="img/icon/vector2.png" alt="account-icon"></a></li>
-                        <li><a href=""><img class="nav__icon2" src="img/icon/Vector.png" alt="cart-icon"></a></li>
+                    <ul class="d-flex a-item--center j-content--center l-style--none nav-icon">
+                        <li class="navbar__item2"><a class="a__style" href=""><img class="vector--style" src="img/icon/img-search.png" alt="search-icon"></a></li>
+                        <li class="d-none"><a class="a__style" href=""><img class="vector--style" src="img/icon/img-person.png" alt="account-icon"></a></li>
+                        <li><a class="a__style" href=""><img class="vector--style vector--style-cart" src="img/icon/img-cart.png" alt="cart-icon"></a></li>
                     </ul>
                 </div>
             </div>
@@ -93,10 +99,10 @@
     <main>
         <section class="banner">
             <div class="container d-flex a-item--center j-content--center banner__item ">
-                <div class="d-flex d-flex--cl a-item--center font-ws banner__block c-inverse-text">
-                    <h1 class="font--ws heading0">Industrial design meets fashion</h1>
-                    <p class="font-ws body1 l-spacing--4 banner__des--style l-spacing--4">Atypical leather goods</p>
-                    <a class="t-decor--none font-ws c-inverse-text l-spacing--4 banner__link--style button-text" href="">Add to cart</a>
+                <div class="d-flex d-flex--cl a-item--center banner__block c-inverse-text">
+                    <h1 class="font--ws heading0 heading-lh">Industrial design meets fashion</h1>
+                    <p class="font--ws body1 l-spacing--4 banner__des--style l-spacing--4">Atypical leather goods</p>
+                    <a class="t-decor--none font--ws c-inverse-text l-spacing--4 banner__link--style button-text" href="">Add to cart</a>
                 </div>
             </div>
         </section>
@@ -105,132 +111,130 @@
             <div class="container">
                 <div class="d-flex d-flex--cl a-item--center j-content--center c-default-text content__describe">
                     <h2 class="font--ws heading1 heading-lh">Obsessive Attention. Intelligent Effort.</h2>
-                    <p class="font--ws body1">Functional handbags made of luxurious and honest materials to improve people's lives in small but mighty ways.</p>
+                    <p class="font--ws body1 l-spacing--4">Functional handbags made of luxurious and honest materials to improve people's lives in small but mighty ways.</p>
                 </div>
 
-                <div class="d-grid content__block m-hor--64 font--ws c-default-text">
+                <div class="d-grid content__block m-hor--64 c-default-text">
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Hobo Small</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Small</h3>
+                        <div class="d-flex container__price body1 font--ws l-spacing--4">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Bo Soft Strap</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Bo Soft Strap</h3>
+                        <div class="d-flex container__price body1 font--ws l-spacing--4">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image1.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Hobo Small</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Small</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image2.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Bo Soft Strap</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Bo Soft Strap</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image3.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image3.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Hobo Small</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Small</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image4.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image4.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Bo Soft Strap</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Bo Soft Strap</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image5.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image5.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Hobo Large</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Large</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$615.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image6.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image6.png" alt="hinh-anh-san-pham"></a>
                             <span class="sale__btn caption1 c-inverse-text">Sale</span>
                         </div>
-                        <span class="body2">Storml</span>
-                        <div class="d-flex container__price body1">
-                            <span class="content__oldprice">$545.00 CAD</span>
+                        <h3 class="body2 font--ws l-spacing--2">Storml</h3>
+                        <div class="d-flex font--ws container__price l-spacing--4">
+                            <span class="body2 content__oldprice">$545.00 CAD</span>
+                            <span class="body1">$195.00 CAD</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex d-flex--cl">
+                        <div class="container__img">
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image7.png" alt="hinh-anh-san-pham"></a>
+                        </div>
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Small</h3>
+                        <div class="d-flex container__price font--ws body1 l-spacing--4">
                             <span>$195.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image7.png" alt="hinh-anh-san-pham"></a>
-                        </div>
-                        <span class="body2">Hobo Small</span>
-                        <div class="d-flex container__price body1">
-                            <span>$195.00 CAD</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex d-flex--cl">
-                        <div class="container__img">
-                            <div class="container__img">
-                                <a href=""><img class="content__img" src="img/content/image8.png" alt="hinh-anh-san-pham"></a>
-                            </div>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image8.png" alt="hinh-anh-san-pham"></a>
                             <span class="sale__btn caption1 c-inverse-text">Sale</span>
                         </div>
-                        <span class="body2">Storml</span>
-                        <div class="d-flex container__price body1">
-                            <span class="content__oldprice">$545.00 CAD</span>
-                            <span>$195.00 CAD</span>
+                        <h3 class="body2 font--ws l-spacing--2">Storml</h3>
+                        <div class="d-flex font--ws container__price l-spacing--4">
+                            <span class="body2 content__oldprice">$545.00 CAD</span>
+                            <span class="body1">$195.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image9.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image9.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Bo Soft Strap</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Bo Soft Strap</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$365.00 CAD</span>
                         </div>
                     </div>
 
                     <div class="d-flex d-flex--cl">
                         <div class="container__img">
-                            <a href=""><img class="content__img" src="img/content/image10.png" alt="hinh-anh-san-pham"></a>
+                            <a class="a__style" href=""><img class="content__img" src="img/content/image10.png" alt="hinh-anh-san-pham"></a>
                         </div>
-                        <span class="body2">Hobo Large</span>
-                        <div class="d-flex container__price body1">
+                        <h3 class="body2 font--ws l-spacing--2">Hobo Large</h3>
+                        <div class="d-flex font--ws container__price body1 l-spacing--4">
                             <span>$615.00 CAD</span>
                         </div>
                     </div>
@@ -238,27 +242,37 @@
             </div>
         </section>
 
-        <section class="stock m-ver--64">
-            <div class="container">
+        <section class="stock">
+            <div class="m-ver--64">
                 <div class="m-hor--64 font--ws c-default-text">
-                    <h2 class="stock__headline font--ws heading2 heading-lh">Back in stock</h2>
-                    <div class="d-flex stock__content">
-                        <div class="d-flex d-flex--cl stock__item">
-                            <img class="stock__img" src="img/stock/Rectangle1.png" alt="hinh-anh-san-pham">
-                            <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor">Bags <img src="img/stock/Vector.png" alt=""></a>
+                    <h2 class="stock__headline--spacing font--ws heading2 heading-lh">Back in stock</h2>
+                    <div class="d-grid d-grid__layout">
+                        <div class="d-grid__item d-grid__item--mi">
+                            <div class="stock__card d-flex d-flex--cl">
+                                <img class="stock__img" src="img/stock/Rectangle1.png" alt="">
+                                <div class="d-flex stock__btn">
+                                    <a class="t-decor--none font--ws body2 c-default-text l-spacing--2" href="">Bags</a>
+                                    <img class="vector--style" src="img/stock/Vector.png" alt="">
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="d-flex stock__item2">
-                            <div class="d-flex d-flex--cl stock__item stock__img--block">
-                                <img class="stock__img stock__img--r" src="./img/stock/Rectangle2.png" alt="hinh-anh-san-pham">
-                                <a href="" class="d-flex content__tags f-weight l-height--150 l-spacing--2 stock__btn t-decor content__tags--rp">Bags <img src="img/stock/Vector.png" alt=""></a>
+                        <div class="d-grid__item">
+                            <div class="stock__card d-flex d-flex--cl">
+                                <img class="stock__img" src="img/stock/Rectangle2.png" alt="">
+                                <div class="d-flex stock__btn">
+                                    <a class="t-decor--none font--ws body2 c-default-text l-spacing--2" href="">Bags</a>
+                                    <img class="vector--style" src="img/stock/Vector.png" alt="">
+                                </div>
                             </div>
+                        </div>
 
-                            <div class="stock__img--block">
-                                <img class="stock__img stock__img--r stock__img--r-warp" src="img/stock/Rectangle3.png" alt="">
-                                <div class="d-flex d-flex--cl content__tags l-height--150 l-spacing--2 stock__item-tags">
-                                    <span class="">Hobo Large</span>
-                                    <span class="">$615.00 CAD</span>
+                        <div class="d-grid__item">
+                            <div class="stock__card stock__card--rt">
+                                <img class="stock__img" src="img/stock/Rectangle3.png" alt="">
+                                <div class="stock__content c-default-text l-spacing--2">
+                                    <h3 class="font--ws body2">Mini Eddy</h3>
+                                    <span class="font--ws body2">$375.00 CAD</span>
                                 </div>
                             </div>
                         </div>
@@ -267,23 +281,28 @@
             </div>
         </section>
 
-        <section class="m-hor--64">
-            <div class="container iframe-container">
-                <iframe id="video-ifream"width="100%" height="742" src="https://www.youtube.com/embed/ttlEagQOPQ4" title="TRAILER ELLE FASHION SHOW 2022 - DREAM OF NEW BEGINNINGS | ELLE Vietnam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <button id="play-button" class="play-button">Play</button>
+        <section class="video">
+            <div class="m-hor--64 video-container">
+                <video id="my-video" style="width: 100%; position: relative;" src="img/video/TRAILER_FASHION.mp4"></video>
+                <button  id="play-button" class="play-button d-flex a-item--center j-content--center">
+                    <img class="play-button__img" src="img/video/play_button.png" alt="trailer-san-pham">
+                </button>
             </div>
         </section>
+          
                 
-        <section class="m-hor--64 m-ver--64">
-            <div class="d-flex stock__message f-style">
-                <div class="d-flex j-content--center a-item--center stock__message-block d-flex--cl">
-                    <img class="stock__deltail-header" src="img/stock/Rectangle15.png" alt="logo">
-                    <p class="banner__des--style stock__des--style l-height--150 f-weight">"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."</p>
-                </div>
+        <section class="describe">
+            <div class="describe--padding">
+                <div class="d-flex describe__container--style font--ws">
+                    <div class="d-grid describe__block--style">
+                        <img class="describe__img" src="img/stock/Rectangle15.png" alt="logo">
+                        <p class="font--ws body1 l-spacing--4 t-align--center">"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."</p>
+                    </div>
 
-                <div class="d-flex j-content--center a-item--center stock__message-block d-flex--cl">
-                    <img class="stock__deltail-header" src="img/stock/Rectangle16.png" alt="logo">
-                    <p class="banner__des--style stock__des--style l-height--150 f-weight">"All too often, we're forced to pick: style, or sustainability. Recently, more designers have been making environmental impact a top priority"</p>
+                    <div class="d-grid describe__block--style">
+                        <img class="describe__img" src="img/stock/Rectangle16.png" alt="logo">
+                        <p class="font--ws body1 l-spacing--4 t-align--center">"All too often, we're forced to pick: style, or sustainability. Recently, more designers have been making environmental impact a top priority"</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -293,47 +312,54 @@
         <section class="footer">
             <div class="container footer__line">
                 <div class="m-hor--64">
-                    <div class="d-flex footer__block l-height--150 l-spacing--2 c--black">
-                        <ul class="d-flex d-flex--cl footer__list l-style ">
-                            <li class="footer__list-title f-weight">Quick links</li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">Bags</a></li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">Shoes</a></li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">Lookbook</a></li>
-                        </ul>
-                        <ul class="d-flex d-flex--cl footer__list l-style">
-                            <li class="footer__list-title f-weight">Info</li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">About</a></li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">Contact us</a></li>
-                            <li class="content__tags"><a class="t-decor footer__tags f-weight" href="">Shipping policy</a></li>
-                        </ul>
+                    <div class="d-flex footer__block c-default-text">
+                        <div class="d-flex d-flex--cl footer--content">
+                            <h3 class="font--ws heading3 heading-lh">Quick links</h3>
+                            <ul class="d-flex d-flex--cl footer__list l-style--none">
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Bags</a></li>
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Shoes</a></li>
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Lookbook</a></li>
+                            </ul>
+                        </div>
 
-                        <ul class="d-flex d-flex--cl footer__list l-style">
-                            <li class="footer__list-title f-weight nav__text">Our mission</li>
-                            <li class="content__tags t-decor footer__tags f-weight nav__text">Quality materials, good designs, craftsmanship and sustainability.</li> 
-                        </ul>
+                        <div class="d-flex d-flex--cl footer--content">
+                            <h3 class="font--ws heading3 heading-lh">Info</h3>
+                            <ul class="d-flex d-flex--cl footer__list l-style--none">
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">About</a></li>
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Contact us</a></li>
+                                <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Shipping policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex d-flex--cl footer--content">
+                            <h3  class="nav__text font--ws heading3 heading-lh">Our mission</h3>
+                            <ul class="d-flex d-flex--cl footer__list l-style--none">
+                                <li class="body2 t-decor footer__tags font--ws nav__text l-spacing--2">Quality materials, good designs, craftsmanship and sustainability.</li> 
+                            </ul>
+                        </div>
 
                         <img class="footer__logo" src="img/icon/Dawn-logo.png" alt="">
                     </div>
 
                     <div class="footer__contact">
-                        <div class="footer__email">
-                            <span class="footer__list-title footer__list-title--rp f-weight">Subscribe to our emails</span>
+                        <form class="footer__email-form">
+                            <label class="t-align--center font--ws heading3 c-default-text footer__list-title footer__list-title--rp">Subscribe to our emails</label>
                             <div class="footer__email-input">
-                                <input class="f-style f-weight l-spacing--4 c--black" type="text" name="email" id="email__Input" placeholder="Email">
-                                <a href=""><img class="footer__confirm" src="img/stock/Vector.png" alt=""></a>
+                                <input type="text" name="email" id="email__Input" placeholder="Email">
+                                <button id="footer__btn" onclick="toogleConfirm()" class="footer__btn"><img class="footer__confirm vector--style" src="img/stock/Vector.png" alt="confirm"></button>
                             </div>
-                        </div>
+                        </form>
 
-                        <ul class="d-flex a-item footer__icon l-style">
-                            <li><a href=""><img src="img/footer/img-twitter.png" alt="twitter"></a></li>
-                            <li><a href=""><img src="img/footer/img-fb.png" alt="facbook"></a></li>
-                            <li><a href=""><img src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
-                            <li><a href=""><img src="img/footer/img-ins.png" alt="instagram"></a></li>
-                            <li><a href="https://www.tiktok.com/vi-VN/"><img src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
-                            <li class="d-none"><a href=""><img src="img/footer/img-tumblr.png" alt="tumblr"></a></li>
-                            <li class="d-none"><a href=""><img src="img/footer/img-wechat.png" alt="wechat"></a></li>
-                            <li><a href=""><img src="img/footer/img-youtube.png" alt="youtube"></a></li>
-                            <li class="d-none"><a href=""><img src="img/footer/img-vimeo.png" alt="vimeo"></a></li>
+                        <ul class="d-flex a-item--center footer__icon l-style--none">
+                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-twitter.png" alt="twitter"></a></li>
+                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-fb.png" alt="facbook"></a></li>
+                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
+                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-ins.png" alt="instagram"></a></li>
+                            <li><a class="a__style footer__contact-link--style" href="https://www.tiktok.com/vi-VN/"><img class="footer__icon--style" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
+                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-tumblr.png" alt="tumblr"></a></li>
+                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-snapchat.png" alt="wechat"></a></li>
+                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-youtube.png" alt="youtube"></a></li>
+                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-vimeo.png" alt="vimeo"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -341,37 +367,37 @@
         </section>
 
         <section class="footer-pay">
-            <div class="container footer__line">
+            <div class="footer__line">
                 <div class="d-flex footer-pay__content">
-                    <div class="d-flex footer-pay__button">
+                    <div class="d-flex footer-pay__button font--ws c-subdued-text">
                         <div class="d-flex d-flex--cl footer-pay__block">
-                            <span class="f-style f-weight c--r-black footer-pay__tags">Country/region</span>
-                            <select class="d-flex a-item--center select__list" name="" id="">
-                                <option class="footer-pay__tags" value="1">Canada (CAD $)</option>
-                                <option class="footer-pay__tags" value="2">Canada (CAD $)</option>
-                                <option class="footer-pay__tags" value="3">Canada (CAD $)</option>
+                            <span class="font--ws caption1 l-spacing--3">Country/region</span>
+                            <select class="d-flex a-item--center font--ws caption1 c-subdued-text select__list" name="contry" id="">
+                                <option class="" value="1">Canada (CAD $)</option>
+                                <option class="" value="2">Canada (CAD $)</option>
+                                <option class="" value="3">Canada (CAD $)</option>
                             </select>
                         </div>
 
                         <div class="d-flex d-flex--cl footer-pay__block">
-                            <span class="f-style f-weight c--r-black footer-pay__tags footer-pay__tags">Language</span>
-                            <select class="d-flex a-item select__list select__list--width" name="" id="">
-                                <option class="footer-pay__tags" value="1">English</option>
-                                <option class="footer-pay__tags" value="2">English</option>
-                                <option class="footer-pay__tags" value="3">English</option>
+                            <span class="font--ws caption1 l-spacing--3">Language</span>
+                            <select class="d-flex a-item font--ws caption1 c-subdued-text select__list select__list--width" name="" id="">
+                                <option class="" value="1">English</option>
+                                <option class="" value="2">English</option>
+                                <option class="" value="3">English</option>
                             </select>
                         </div>
                     </div>
 
-                    <ul class="d-flex footer-pay__icon l-style">
-                        <li><a href=""><img src="img/footer/img-shoppay.png" alt="shoppay"></a></li>
-                        <li><a href=""><img src="img/footer/img-visa.png" alt="visa"></a></li>
-                        <li><a href=""><img src="img/footer/img-mastercard.png" alt="master-card"></a></li>
-                        <li><a href=""><img src="img/footer/img-applepay.png" alt="apple-pay"></a></li>
-                        <li><a href=""><img src="img/footer/img-googlepay.png" alt="google-pay"></a></li>
-                        <li><a href=""><img src="img/footer/img-amex.png" alt="amex"></a></li>
+                    <ul class="d-flex footer-pay__icon l-style--none">
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-shoppay.png" alt="shoppay"></a></li>
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-visa.png" alt="visa"></a></li>
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-mastercard.png" alt="master-card"></a></li>
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-applepay.png" alt="apple-pay"></a></li>
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-googlepay.png" alt="google-pay"></a></li>
+                        <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-amex.png" alt="amex"></a></li>
                     </ul>
-                    <span class="nav__text power-by c--black f-weight f-style">© 2021, dawn-theme-default Powered by Shopify</span>
+                    <span class="nav__text power-by font--ws c-default-text t-align--center">© 2021, dawn-theme-default Powered by Shopify</span>
                 </div>
             </div>
         </section>

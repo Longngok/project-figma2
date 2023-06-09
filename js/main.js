@@ -8,25 +8,39 @@ function hideMenu() {
     menu.style.display = "none";
 }
 
-file: script.js
+var video = document.getElementById("my-video");
+var playButton = document.getElementById("play-button");
+var isPlaying = false;
 
-document.addEventListener('DOMContentLoaded', function() {
-    var playButton = document.getElementById('play-button');
-    var videoIframe = document.getElementById('video-iframe');
-  
-    playButton.addEventListener('click', function() {
-      if (videoIframe.paused) {
-        videoIframe.play();
-        playButton.style.display = 'none';
-      } else {
-        videoIframe.pause();
-        playButton.style.display = 'block';
-      }
-    });
-  
-    videoIframe.addEventListener('ended', function() {
-      playButton.style.display = 'block';
-    });
-  });
-  
-  
+function toggleVideoPlay() {
+  if (isPlaying) {
+    video.pause();
+    playButton.style.display = "block";
+  } else {
+    video.play();
+    playButton.style.display = "none";
+  }
+  isPlaying = !isPlaying;
+}
+
+video.addEventListener("click", toggleVideoPlay);
+playButton.addEventListener("click", toggleVideoPlay);
+
+
+var footerBtn = document.getElementById("footer-btn")
+
+function toogleConfirm(){
+  event.preventDefault();
+
+  var emailInput = document.getElementById("email__Input");
+  var emailValue = emailInput.value;
+
+  if (emailValue !== "") {
+    alert("Thank " + emailValue + " for subcribe!");
+    emailInput.value="";
+  } else {
+    alert("please input your email!");
+  }
+}
+
+footerBtn.addEventListener("click", toogleConfirm);
