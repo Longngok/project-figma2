@@ -44,3 +44,26 @@ function toogleConfirm(){
 }
 
 footerBtn.addEventListener("click", toogleConfirm);
+
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+
+
+  function decreaseQuantity() {
+    var quantityInput = document.getElementById('quantity');
+    var quantity = parseInt(quantityInput.value);
+
+    if (quantity > 0) {
+      quantityInput.value = quantity - 1;
+    }
+  }
+
+  function increaseQuantity() {
+    var quantityInput = document.getElementById('quantity');
+    var quantity = parseInt(quantityInput.value);
+    
+    quantityInput.value = quantity + 1;
+  }

@@ -1,0 +1,170 @@
+.tote-bags__container
+{
+    gap: 4rem;
+
+    margin-top: 13.9rem;
+    margin-bottom: 6.4rem;
+}
+
+.tote-bags__nav
+{
+    justify-content: space-between;
+}
+
+.tote-bags__nav--block
+{
+    gap: 2.4rem;
+}
+
+.tote-bags__nav--list
+{
+    gap: 2.4rem;
+}
+
+.tote-bags__nav--heading::after
+{
+    content: ":";
+}
+
+.tote-bags__nav--item
+{
+    gap: 1.36em;
+
+    position: relative;
+}
+
+.tote-bags__nav--item:hover .sub-menu__totebags
+{
+    display: block;
+}
+
+.sub-menu__totebags
+{
+    position: absolute;
+    z-index: 3;
+    top: 2rem;
+    left: -1.5rem;
+
+    display: none;
+
+    width: 30rem;
+
+    background-color: var(--color-background1);
+    border: 1px solid var(--color-border-light);
+}
+
+.sub-menu--padding
+{
+    padding: 1.6rem;
+}
+
+.sub-menu--header
+{
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.sub-menu--content
+{
+    gap: 1.7rem;
+}
+
+.checkbox__block
+{
+    gap: 0.8rem;
+}
+
+.checkbox__label::after
+{
+    content: "(1)";
+}
+
+.sub-menu__checkbox
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    border: 0.5px solid var(--color-accent1);
+}
+
+.sub-menu__checkbox:checked
+{
+    background-color: var(--color-accent1);
+}
+
+.sub-menu__text
+{
+    width: 11.1rem;
+    height: 4.7rem;
+    
+    margin-left: 1.4rem;
+    padding-left: 1.6rem;
+}
+
+.sub-menu__color
+{
+    justify-content: end;
+}
+
+/*detail go here*/
+
+.detail
+{
+    margin-top: 7.5em;
+}
+
+.detail__content
+{
+    gap: 4rem;
+}
+
+.d-grid__detail
+{
+    max-width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.d-grid__item
+{
+    width: 100%;
+}
+
+.d-grid__item img
+{
+    width: 100%;
+}
+
+.d-grid__item--fc
+{
+    width: 100%;
+    grid-column: 1/3;
+}
+
+.d-grid__item--fc img
+{
+    width: 100%;
+}
+
+.color__btn-item
+{
+    padding: 0.8rem 1.2rem;
+
+    margin: auto 0.8rem 0.8rem auto;
+
+    border: 1px solid var(--color-border-dark);
+    border-radius: 9.9rem;
+
+    background-color: var(--color-background1);
+}
+
+.color__btn-item--color
+{
+    color: var(--color-inverse-text);
+    background-color: var(--color-accent1);
+}
