@@ -12,7 +12,7 @@
 
     --font-weight: 400;
 
-    --root-font-size: 1em;
+    --root-font-size: 1rem;
 
     --font-size-small: calc(1.3 * var(--root-font-size));
     --font-size-medium: calc(1.4 * var(--root-font-size));

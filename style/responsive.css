@@ -6,111 +6,12 @@
         --font-size-h-large: calc(3 * var(--root-font-size));
         --font-size-h-exlarge: calc(4 * var(--root-font-size));
     }
-    .container
+
+    .mobile__style
     {
-        width: 100%;
-    }
-    
-    .d-none
-    {
-        display: none;
-    }
-
-    .nav__menu
-    {
-        width: 4rem;
-        height: 4rem;
-        margin-right: 4rem;
-    }
-
-    .nav__list--style
-    {
-        padding: 0.8rem 0.5rem;
-        justify-content: space-between;
-        border-bottom: 1px solid var(--color-border-light);
-    }
-
-    .nav--style-rp
-    {
-        flex-direction: column;
-    }
-
-    .nav__text
-    {
-        display: block;
-    }
-
-    .nav__text--style
-    {
-        padding: 0.8rem;
-        text-align: center;
-        border-bottom: 1px solid var(--color-border-light);
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .sub__menu--rp
-    {
-        display: none;
-        position: absolute;
-
-        gap: 1.1rem;
-    }
-
-    .navbar__close-btn--rp
-    {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .navbar__sub-menu--rp
-    {
-        width: 33.6rem;
-        height: 52.8rem;
-    }
-
-    .navbar__sub-menu--rp-content
-    {
-        background-color: var(--color-background1);
-        gap: 3.5rem;
-        padding: 3.2rem 3.2rem 17.5rem 3.2rem;
-    }
-
-    .navbar__sub-menu--rp-footer
-    {
-        background-color: var(--color-background2);
-
-        gap: 3.7rem;
-
-        box-sizing: border-box;
-        padding: 2.4rem;
-    }
-
-    .login--btn
-    {
-        gap: 0.9rem;
-        font-size: var(--font-size-14);
-    }
-
-    .sub__img
-    {
-        width: 1.7rem;
-        height: 1.8rem;
-    }
-
-    .sub__img--flex
-    {
-        gap: 2.6rem;
-    }
-
-    .sub__item
-    {
-        justify-content: space-between;
+        font-size: var(--font-size-h-small);
+        line-height:  0.83em;
         font-weight: 600;
-        font-size: 1.8rem;
-        line-height: 0.8333;
     }
 
     .m-hor--64
@@ -123,8 +24,134 @@
         margin: 4rem auto;
     }
 
+    .d-none
+    {
+        display: none;
+    }
+
+    .d-none--rp
+    {
+        display: block;
+    }
+
+    .d-gird__header
+    {
+        padding: 1.9rem 0;
+    }
+
+    .toggle-menu
+    {
+        display: flex;
+    }
+
+    .toggle__icon
+    {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+
+    .header__title
+    {
+        padding: 0.8rem;
+        border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .header__img
+    {
+        display: grid;
+        place-items: center;
+    }
+
+    .nav-icon__container
+    {
+        gap: 1.4rem;
+    }
+
+    .header__main {
+        position: absolute;
+        top: 11.6rem;
+        left: 0;
+        margin: 0;
+
+        max-width: 33.6rem;
+        width: 100%;
+
+        border: 1px solid var(--color-border-light);
+        transition: transform 0.3s ease;
+        transform: translateX(-350px);
+    }
+      
+    .header__main.open {
+        transform: translateX(0);
+    }
+
+    .button--rp {
+        position: absolute;
+        top: 52rem;
+        left: 2.4rem;
+        gap: 0.9rem;
+        transition: transform 0.3s ease;
+        transform: translateX(-350px);
+    }
+      
+    .header__main.open + .header__icon .button--rp {
+        transform: translateX(0);
+    }
+
+
+    .sub-menu__main
+    {   
+        top: -8.6rem;
+        left: -3.1rem;
+        margin: 0;
+       
+        height: 374px;
+        width: 332px;
+
+        border: 1px solid var(--color-border-light);
+    }
+
+    .nav__container
+    {
+  
+        background-color: var(--color-background1);
+  
+        padding: 6.4rem 3.2rem 17.5rem 3.2rem;
+    }
+  
+    .nav__main
+    {
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    .nav__item
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .icon--rp
+    {
+        content: url("../img/stock/Vector.png");
+    }
+
+    .header-icon__container
+    {
+        width: 100%;
+    }
+
+    .header-submenu__icon
+    {
+        background-color: var(--color-background2);
+
+        padding: 9.3rem 2.4rem 3.2rem 2.4rem;
+        gap: 2.5rem;
+    }
+
     .banner__item
     {
+        margin-top: 11.8rem;
         background: url(../img/Banner/Frame101.png);
         background-size: cover;
         background-position: center;

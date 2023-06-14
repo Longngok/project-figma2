@@ -1,12 +1,57 @@
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.style.display = "flex";
-}
 
-function hideMenu() {
-    var menu = document.getElementById("menu");
-    menu.style.display = "none";
-}
+document.getElementById('open-toggle').addEventListener('click', function() {
+  document.getElementById('header-main').classList.add('open');
+  document.getElementById('open-toggle').classList.add('d-none');
+  document.getElementById('close-toggle').classList.remove('d-none');
+});
+
+document.getElementById('close-toggle').addEventListener('click', function() {
+  document.getElementById('header-main').classList.remove('open');
+  document.getElementById('open-toggle').classList.remove('d-none');
+  document.getElementById('close-toggle').classList.add('d-none');
+});
+
+document.getElementById('close-toggle').addEventListener('click', function() {
+  document.getElementById('header-main').classList.remove('open');
+});
+
+document.getElementById('close-toggle').addEventListener('click', function() {
+  document.getElementById('header-main').classList.remove('open');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var navItem = document.querySelector('.nav__item');
+  var subMenuContainer = document.querySelector('.sub-menu__container');
+
+  navItem.addEventListener('click', function(e) {
+      e.preventDefault();
+      subMenuContainer.style.display = 'flex';
+});
+
+document.addEventListener('click', function(e) {
+      var target = e.target;
+      if (!target.closest('.nav__item') && !target.closest('.sub-menu__container')) {
+          subMenuContainer.style.display = 'none';
+      }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var navItem = document.querySelector('.nav__item');
+  var subMenuContainer = document.querySelector('.sub-menu__container');
+
+  navItem.addEventListener('click', function(e) {
+    e.preventDefault();
+    subMenuContainer.classList.toggle('show');
+  });
+
+document.addEventListener('click', function(e) {
+    var target = e.target;
+    if (!target.closest('.nav__item') && !target.closest('.sub-menu__container')) {
+      subMenuContainer.classList.remove('show');
+    }
+  });
+});
 
 var video = document.getElementById("my-video");
 var playButton = document.getElementById("play-button");

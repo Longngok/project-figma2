@@ -14,86 +14,85 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header">
-        <nav class="nav--style">
-            <div class="d-flex nav--style-rp">
-                <span class="container font--ws body2 l-spacing--2 nav__text nav__text--style">Free shipping available on all orders!</span>
-                <div class="container d-flex nav__list--style nav__text">
-                    <a class="nav__text m-menu" onclick="toggleMenu()"><img class="nav__menu" src="img/icon/m-menu.png" alt=""></a>
-                    <div id="menu" class="d-flex d-flex--cl l-style--none sub__menu--rp">
-                        <div><button onclick="hideMenu()"><img class="navbar__close-btn--rp" src="img/icon/close.png" alt=""></button></div>
-                        <div>
-                            <div class="d-flex d-flex--cl navbar__sub-menu--rp">
-                                <ul class="l-style--none f-style d-flex d-flex--cl navbar__sub-menu--rp-content">
-                                    <li><a class="t-decor--none c-default-text d-flex sub__item" href="">Bag <img class="vector--style" src="img/stock/Vector.png" alt=""></a></li>
-                                    <li><a class="t-decor--none c-default-text d-flex sub__item" href="">Shoe <img class="vector--style" src="img/stock/Vector.png" alt=""></a></li>
-                                    <li><a class="t-decor--none c-default-text sub__item" href="">Lookbook</a></li>
-                                </ul>
+    <header class="header b--light">
+        <div class="header__title d-flex a-item--center j-content--center">
+            <span class="font--ws body2 l-spacing--2 c-default-text t-align--center d-none--rp">Free shipping available on all orders!</span>
+        </div>
+        <div class="d-grid d-gird__header m-hor--64">
+            <div class="toggle-menu">
+                <button id="open-toggle" class="button__default toggle__icon">
+                    <img class="img__style" src="img/icon/m-menu.png" alt="">
+                  </button>
+                  <button id="close-toggle" class="button__default toggle__icon d-none">
+                    <img class="img__style" src="img/icon/close.png" alt="">
+                  </button>
+            </div>
+            <div class="header__img">
+                <a href="">
+                    <img class="header__logo" src="img/icon/Dawn-logo.png" alt="">
+                </a>
+            </div>
 
-                                <ul class="l-style--none navbar__sub-menu--rp-footer d-flex d-flex--cl">
-                                    <li><a class="t-decor--none d-flex a-item--center  login--btn" href="">
-                                        <img class="sub__img" src="img/icon/img-person.png" alt="person">
-                                        <span class="font--ws body2 l-spacing--2 c-default-text">Login</span>
-                                    </a></li>
-                                    <li>
-                                        <ul class="l-style--none d-flex sub__img--flex l-style--none"> 
-                                            <li><a href=""><img class="sub__img" src="img/footer/img-twitter.png" alt="twitter"></a></li>
-                                            <li><a href=""><img class="sub__img" src="img/footer/img-fb.png" alt="facbook"></a></li>
-                                            <li><a href=""><img class="sub__img" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
-                                            <li><a href=""><img class="sub__img" src="img/footer/img-ins.png" alt="instagram"></a></li>
-                                            <li><a href="https://www.tiktok.com/vi-VN/"><img class="sub__img" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
-                                            <li><a href=""><img class="sub__img" src="img/footer/img-youtube.png" alt="youtube"></a></li>
-                                        </ul>
-                                    </li>
+            <div class="header__main" id="header-main">
+                <nav class="nav__container">
+                    <ul class="l-style--none d-flex nav__main">
+                        <li class="nav-item__container">
+                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="">
+                                <span class="mobile__style">Bags</span>
+                                <img class="icon__size icon--rp" src="img/icon/Vector11.png" alt="">
+                            </a>
+                            <div class="d-none sub-menu__container">
+                                <ul class="d-flex d-flex--cl l-style--none sub-menu__main ">
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Shop all</a></li>
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Tote bags</a></li>
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Shoulder bags</a></li>
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Crossbody bags</a></li>
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Top handle bags</a></li>
+                                    <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Mini bags</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </li>
 
-
-                    <ul class="d-flex a-item--center font--ws l-style--none c-default-text navbar__list">
-                        <li class=".nav__logo-wrapper">
-                            <a class="a__style" href="index.html">
-                                <img class="nav__logo" src="img/icon/Dawn-logo.png" alt="logo">
+                        <li class="nav-item__container">
+                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="">
+                                <span class="mobile__style">Shoes</span>
+                                <img class="icon__size icon--rp" src="img/icon/Vector11.png" alt="">
                             </a>
                         </li>
-                        <li class="d-flex a-item--center nav__item">
-                            <span class="font--ws body2 l-spacing--2 d-none">Bags</span>
-                            <img class="a-item--center nav__icon vector--style d-none" src="img/icon/Vector11.png" alt="icon">
-                            <ul class="l-style--none navbar__sub-menu">
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Shop all</a></li>
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="/html/Totebag.html">Tote bags</a></li>
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Shoulder bags</a></li>
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Crossbody bags</a></li>
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Top handle bags</a></li>
-                                <li><a class="t-decor--none caption1 l-spacing--3 c-default-text" href="">Mini bags</a></li>
-                            </ul>
+                        
+                        <li class="nav-item__container">
+                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="">
+                                <span class="mobile__style">Lookbook</span>
+                            </a>
                         </li>
-
-                        <li class="d-flex a-item--center nav__item">
-                            <span class="font--ws body2 l-spacing--2 d-none">Shoes</span> 
-                            <img class="a-item nav__icon vector--style d-none" src="img/icon/Vector11.png" alt="icon">
-                            <ul class="l-style--none navbar__sub-menu">
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Shop all</a></li>
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Tote bags</a></li>
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Shoulder bags</a></li>
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Crossbody bags</a></li>
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Top handle bags</a></li>
-                                <li><a class="a__style t-decor--none l-spacing--3 caption1 c-default-text" href="">Mini bags</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a class="t-decor--none d-none body2 c-default-text l-spacing--2" href="">Lookbook</a></li>
                     </ul>
+                </nav>
 
-                    <ul class="d-flex a-item--center j-content--center l-style--none nav-icon">
-                        <li class="navbar__item2"><a class="a__style" href=""><img class="vector--style" src="img/icon/img-search.png" alt="search-icon"></a></li>
-                        <li class="d-none"><a class="a__style" href=""><img class="vector--style" src="img/icon/img-person.png" alt="account-icon"></a></li>
-                        <li><a class="a__style" href=""><img class="vector--style vector--style-cart" src="img/icon/img-cart.png" alt="cart-icon"></a></li>
+                <div class="header-icon__container d-none--rp">
+                    <ul class="d-flex a-item--center l-style--none header-submenu__icon">
+                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-twitter.png" alt="twitter"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-fb.png" alt="facbook"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-ins.png" alt="instagram"></a></li>
+                        <li><a class="a__style icon__size" href="https://www.tiktok.com/vi-VN/"><img class="img__style" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-youtube.png" alt="youtube"></a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+
+            <div class="header__icon">
+                <ul class="l-style--none d-flex nav-icon__container">
+                    <li><button class="button__default icon__size"><img class="img__style" src="img/icon/img-search.png" alt=""></button></li>
+                    <li><button id="button--rp" class="button__default icon__size d-flex a-item--center button--rp">
+                            <img class="img__style" src="img/icon/img-person.png" alt="">
+                            <a class="d-none--rp t-decor--none font--ws body2 l-spacing--2 c-default-text" href="">login</a>
+                        </button>
+                    </li>
+                    <li><button class="button__default icon__size"><img class="img__style" src="img/icon/img-cart.png" alt=""></button></li>
+                </ul>
+            </div>
+
+        </div>
     </header>
 
     <main>
@@ -276,7 +275,7 @@
                                 <img class="stock__img" src="img/stock/Rectangle1.png" alt="">
                                 <div class="d-flex stock__btn">
                                     <a class="t-decor--none font--ws body2 c-default-text l-spacing--2" href="">Bags</a>
-                                    <img class="vector--style" src="img/stock/Vector.png" alt="">
+                                    <img class="icon__size" src="img/stock/Vector.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -286,7 +285,7 @@
                                 <img class="stock__img" src="img/stock/Rectangle2.png" alt="">
                                 <div class="d-flex stock__btn">
                                     <a class="t-decor--none font--ws body2 c-default-text l-spacing--2" href="">Bags</a>
-                                    <img class="vector--style" src="img/stock/Vector.png" alt="">
+                                    <img class="icon__size" src="img/stock/Vector.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -356,10 +355,8 @@
                         </div>
 
                         <div class="d-flex d-flex--cl footer--content">
-                            <h3  class="nav__text font--ws heading3 heading-lh">Our mission</h3>
-                            <ul class="d-flex d-flex--cl footer__list l-style--none">
-                                <li class="body2 t-decor footer__tags font--ws nav__text l-spacing--2">Quality materials, good designs, craftsmanship and sustainability.</li> 
-                            </ul>
+                            <h3  class="font--ws heading3 heading-lh d-none--rp">Our mission</h3>
+                            <p class="body2 t-decor footer__tags font--ws l-spacing--2 d-none--rp">Quality materials, good designs, craftsmanship and sustainability.</p> 
                         </div>
 
                         <img class="footer__logo" src="img/icon/Dawn-logo.png" alt="">
@@ -370,20 +367,20 @@
                             <label class="font--ws heading3 c-default-text footer__list-title footer__list-title--rp">Subscribe to our emails</label>
                             <div class="footer__email-input">
                                 <input type="text" name="email" id="email__Input" placeholder="Email">
-                                <button id="footer__btn" onclick="toogleConfirm()" class="footer__btn"><img class="footer__confirm vector--style" src="img/stock/Vector.png" alt="confirm"></button>
+                                <button id="footer__btn" onclick="toogleConfirm()" class="footer__btn"><img class="footer__confirm icon__size" src="img/stock/Vector.png" alt="confirm"></button>
                             </div>
                         </form>
 
                         <ul class="d-flex a-item--center footer__icon l-style--none">
-                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-twitter.png" alt="twitter"></a></li>
-                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-fb.png" alt="facbook"></a></li>
-                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
-                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-ins.png" alt="instagram"></a></li>
-                            <li><a class="a__style footer__contact-link--style" href="https://www.tiktok.com/vi-VN/"><img class="footer__icon--style" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
-                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-tumblr.png" alt="tumblr"></a></li>
-                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-snapchat.png" alt="wechat"></a></li>
-                            <li><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-youtube.png" alt="youtube"></a></li>
-                            <li class="d-none"><a class="a__style footer__contact-link--style" href=""><img class="footer__icon--style" src="img/footer/img-vimeo.png" alt="vimeo"></a></li>
+                            <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-twitter.png" alt="twitter"></a></li>
+                            <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-fb.png" alt="facbook"></a></li>
+                            <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
+                            <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-ins.png" alt="instagram"></a></li>
+                            <li><a class="a__style icon__size" href="https://www.tiktok.com/vi-VN/"><img class="img__style" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
+                            <li class="d-none"><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-tumblr.png" alt="tumblr"></a></li>
+                            <li class="d-none"><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-snapchat.png" alt="wechat"></a></li>
+                            <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-youtube.png" alt="youtube"></a></li>
+                            <li class="d-none"><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-vimeo.png" alt="vimeo"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -421,7 +418,7 @@
                         <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-googlepay.png" alt="google-pay"></a></li>
                         <li><a class="a__style" href=""><img class="footer-pay__icon--style" src="img/footer/img-amex.png" alt="amex"></a></li>
                     </ul>
-                    <span class="nav__text power-by font--ws c-default-text t-align--center">© 2021, dawn-theme-default Powered by Shopify</span>
+                    <span class="d-none--rp power-by font--ws c-default-text t-align--center">© 2021, dawn-theme-default Powered by Shopify</span>
                 </div>
             </div>
         </section>
