@@ -37,12 +37,12 @@
                 <nav class="nav__container">
                     <ul class="l-style--none d-flex nav__main">
                         <li class="nav-item__container">
-                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="">
-                                <span class="mobile__style">Bags</span>
-                                <img class="icon__size icon--rp" src="img/icon/Vector11.png" alt="">
+                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="#">
+                              <span class="mobile__style">Bags</span>
+                              <img class="icon__size icon--rp" src="img/icon/Vector11.png" alt="">
                             </a>
-                            <div class="d-none sub-menu__container">
-                                <ul class="d-flex d-flex--cl l-style--none sub-menu__main ">
+                            <div class="sub-menu__container">
+                                <ul class="d-flex d-flex--cl l-style--none sub-menu__main">
                                     <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Shop all</a></li>
                                     <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Tote bags</a></li>
                                     <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Shoulder bags</a></li>
@@ -68,14 +68,20 @@
                     </ul>
                 </nav>
 
-                <div class="header-icon__container d-none--rp">
+                <div class="header-icon__container d-flex d-flex--cl d-none--rp">
+                    <div>
+                        <button id="button--rp" class="button__default icon__size d-flex a-item--center button--rp">
+                            <img class="img__style d-none--rp" src="img/icon/img-person.png" alt="">
+                            <a class="d-none--rp t-decor--none font--ws body2 l-spacing--2 c-default-text" href="">login</a>
+                        </button>
+                    </div>
                     <ul class="d-flex a-item--center l-style--none header-submenu__icon">
-                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-twitter.png" alt="twitter"></a></li>
-                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-fb.png" alt="facbook"></a></li>
-                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
-                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-ins.png" alt="instagram"></a></li>
-                        <li><a class="a__style icon__size" href="https://www.tiktok.com/vi-VN/"><img class="img__style" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
-                        <li><a class="a__style icon__size" href=""><img class="img__style" src="img/footer/img-youtube.png" alt="youtube"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style d-none--rp" src="img/footer/img-twitter.png" alt="twitter"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style d-none--rp" src="img/footer/img-fb.png" alt="facbook"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style d-none--rp" src="img/footer/img-pinterest.png" alt="pinterest"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style d-none--rp" src="img/footer/img-ins.png" alt="instagram"></a></li>
+                        <li><a class="a__style icon__size" href="https://www.tiktok.com/vi-VN/"><img class="img__style d-none--rp" src="img/footer/img-tiktok.png" alt="tiktok"></a></li>
+                        <li><a class="a__style icon__size" href=""><img class="img__style d-none--rp" src="img/footer/img-youtube.png" alt="youtube"></a></li>
                     </ul>
                 </div>
             </div>
@@ -83,11 +89,7 @@
             <div class="header__icon">
                 <ul class="l-style--none d-flex nav-icon__container">
                     <li><button class="button__default icon__size"><img class="img__style" src="img/icon/img-search.png" alt=""></button></li>
-                    <li><button id="button--rp" class="button__default icon__size d-flex a-item--center button--rp">
-                            <img class="img__style" src="img/icon/img-person.png" alt="">
-                            <a class="d-none--rp t-decor--none font--ws body2 l-spacing--2 c-default-text" href="">login</a>
-                        </button>
-                    </li>
+                    <li><button class="button__default icon__size"><img class="img__style d-none" src="img/icon/img-person.png" alt=""></button></li>
                     <li><button class="button__default icon__size"><img class="img__style" src="img/icon/img-cart.png" alt=""></button></li>
                 </ul>
             </div>
