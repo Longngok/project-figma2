@@ -1,4 +1,3 @@
-
 document.getElementById('open-toggle').addEventListener('click', function() {
   document.getElementById('header-main').classList.add('open');
   document.getElementById('open-toggle').classList.add('d-none');
@@ -19,36 +18,20 @@ document.getElementById('close-toggle').addEventListener('click', function() {
   document.getElementById('header-main').classList.remove('open');
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var navItem = document.querySelector('.nav__item');
-  var subMenuContainer = document.querySelector('.sub-menu__container');
+function toggleSubMenu(event) {
+  event.preventDefault();
+  var submenuContainer = event.currentTarget.parentNode.querySelector('.sub-menu__container');
+  submenuContainer.classList.toggle('show');
+}
 
-  navItem.addEventListener('click', function(e) {
-    e.preventDefault();
-    subMenuContainer.classList.toggle('show');
-  });
-
-  document.addEventListener('click', function(e) {
-    var target = e.target;
-    if (!target.closest('.nav__item') && !target.closest('.sub-menu__container')) {
-      subMenuContainer.classList.remove('show');
-    }
-  });
-
-  // Thêm sự kiện lắng nghe sự thay đổi kích thước cửa sổ
-  window.addEventListener('resize', function() {
-    if (window.innerWidth >= 768) {
-      // Xóa lớp 'show' khi kích thước cửa sổ đủ lớn
-      subMenuContainer.classList.remove('show');
-    }
-  });
-
-  // Kiểm tra kích thước cửa sổ ban đầu
-  if (window.innerWidth >= 768) {
-    // Xóa lớp 'show' khi kích thước cửa sổ đủ lớn
-    subMenuContainer.classList.remove('show');
-  }
+var backButton = document.querySelector('.sub-menu__container .d-none--rp');
+backButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  var submenuContainer = backButton.parentNode;
+  submenuContainer.classList.remove('show');
 });
+
+
 
 
 var video = document.getElementById("my-video");

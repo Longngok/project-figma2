@@ -78,33 +78,6 @@ body
     gap: 1.36rem;
 }
 
-.sub-menu__main
-{
-    position: absolute;
-    background-color: var(--color-background1);
-
-    border: 1px solid var(--color-border-light);
-
-    padding: 3.2rem 1.6rem;
-    top: 2rem;
-    left: -1.5rem;
-    width: 19.7rem;
-    
-    gap: 2.4rem;
-}
-
-.sub-menu__container {
-    opacity: 0;
-    position: relative;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    transform: translateY(-20px);
-}
-  
-.sub-menu__container.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .sub-menu__item
 {
     font-size: 1.3rem;
@@ -117,10 +90,36 @@ body
     max-height: 2.2rem;
 }
 
+.sub-menu__container {
+    position: absolute;
+    top: 50px;
+    left: 17rem;
+    background-color: var(--color-background1);
+    padding: 3.2rem 1.6rem;
+    max-width: 19.7rem;
+    width: 100%;
+    border: 1px solid var(--color-border-light);
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateY(0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu__container.show {
+    transform: translateY(2rem);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu__main
+{
+    gap: 2.4rem;
+}
+
+
 .nav__container
 {
     gap: 1.6rem;
-    position: relative;
 }
 
 .nav-icon__container
@@ -223,6 +222,20 @@ body
 {
     height: 100%;
     width: 100%;
+}
+
+.card:hover .container__img
+{
+    transition: 0.3s;
+    transform: translatey(-1rem);
+    box-shadow: 1px 5px 20px 2px black;
+}
+
+.card:hover .stock__card
+{
+    transition: 0.3s;
+    transform: translatey(-1rem);
+    box-shadow: 1px 5px 20px 2px black;
 }
 
 .sale__btn

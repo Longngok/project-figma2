@@ -33,15 +33,16 @@
                 </a>
             </div>
 
-            <div class="header__main" id="header-main">
+           <div class="header__main d-grid" id="header-main">
                 <nav class="nav__container">
                     <ul class="l-style--none d-flex nav__main">
                         <li class="nav-item__container">
-                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="#">
+                            <a class="nav__item t-decor--none font--ws body2 l-spacing--2 c-default-text d-flex a-item--center button__default" href="#" onclick="toggleSubMenu(event)">
                               <span class="mobile__style">Bags</span>
                               <img class="icon__size icon--rp" src="img/icon/Vector11.png" alt="">
                             </a>
                             <div class="sub-menu__container">
+                                <button class="button__default d-none--rp button__back" onclick="toggleSubMenu(event)">Back</button>
                                 <ul class="d-flex d-flex--cl l-style--none sub-menu__main">
                                     <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Shop all</a></li>
                                     <li><a class="t-decor--none font--ws sub-menu__item l-spacing--2 c-default-text" href="">Tote bags</a></li>
@@ -272,7 +273,7 @@
                 <div class="m-hor--64 font--ws c-default-text">
                     <h2 class="stock__headline--spacing font--ws heading2 heading-lh">Back in stock</h2>
                     <div class="d-grid d-grid__layout">
-                        <div class="d-grid__item d-grid__item--mi">
+                        <div class="d-grid__item d-grid__item--mi card">
                             <div class="stock__card d-flex d-flex--cl">
                                 <img class="stock__img" src="img/stock/Rectangle1.png" alt="">
                                 <div class="d-flex stock__btn">
@@ -282,7 +283,7 @@
                             </div>
                         </div>
 
-                        <div class="d-grid__item">
+                        <div class="d-grid__item card">
                             <div class="stock__card d-flex d-flex--cl">
                                 <img class="stock__img" src="img/stock/Rectangle2.png" alt="">
                                 <div class="d-flex stock__btn">
@@ -292,7 +293,7 @@
                             </div>
                         </div>
 
-                        <div class="d-grid__item">
+                        <div class="d-grid__item card">
                             <div class="stock__card stock__card--rt">
                                 <img class="stock__img" src="img/stock/Rectangle3.png" alt="">
                                 <div class="stock__content c-default-text l-spacing--2">
@@ -339,7 +340,7 @@
                 <div class="m-hor--64">
                     <div class="d-flex footer__block c-default-text">
                         <div class="d-flex d-flex--cl footer--content">
-                            <h3 class="font--ws heading3 heading-lh">Quick links</h3>
+                            <h2 class="font--ws heading3 heading-lh">Quick links</h3>
                             <ul class="d-flex d-flex--cl footer__list l-style--none">
                                 <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Bags</a></li>
                                 <li class="body2"><a class="t-decor--none c-default-text l-spacing--2" href="">Shoes</a></li>
@@ -357,7 +358,7 @@
                         </div>
 
                         <div class="d-flex d-flex--cl footer--content">
-                            <h3  class="font--ws heading3 heading-lh d-none--rp">Our mission</h3>
+                            <h2  class="font--ws heading3 heading-lh d-none--rp">Our mission</h3>
                             <p class="body2 t-decor footer__tags font--ws l-spacing--2 d-none--rp">Quality materials, good designs, craftsmanship and sustainability.</p> 
                         </div>
 
