@@ -1,22 +1,9 @@
-document.getElementById('open-toggle').addEventListener('click', function() {
-  document.getElementById('header-main').classList.add('open');
-  document.getElementById('open-toggle').classList.add('d-none');
-  document.getElementById('close-toggle').classList.remove('d-none');
-});
-
-document.getElementById('close-toggle').addEventListener('click', function() {
-  document.getElementById('header-main').classList.remove('open');
-  document.getElementById('open-toggle').classList.remove('d-none');
-  document.getElementById('close-toggle').classList.add('d-none');
-});
-
-document.getElementById('close-toggle').addEventListener('click', function() {
-  document.getElementById('header-main').classList.remove('open');
-});
-
-document.getElementById('close-toggle').addEventListener('click', function() {
-  document.getElementById('header-main').classList.remove('open');
-});
+function togglebar()
+{
+  document.getElementById('nav-responsive').classList.toggle('active');
+  document.getElementById('togglebar').classList.toggle('change')
+  // document.body.style.backgroundColor = "black";
+}
 
 function toggleSubMenu(event) {
   event.preventDefault();
@@ -31,6 +18,16 @@ backButton.addEventListener('click', function(event) {
   submenuContainer.classList.remove('show');
 });
 
+// function toggleImage(event, imgId) {
+//   event.preventDefault();
+//   var imgElement = document.getElementById(imgId);
+  
+//   if (imgElement.src.endsWith('img/icon/Vector11.png')) {
+//     imgElement.src = 'img/icon/close.png'; // Thay đổi đường dẫn hình ảnh mới
+//   } else {
+//     imgElement.src = 'img/icon/Vector11.png'; // Quay lại hình ảnh ban đầu
+//   }
+// }
 
 
 

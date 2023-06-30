@@ -3,34 +3,284 @@ html
     font-size: 62.5%;
 }
 
+.container
+{
+    margin: var(--container);
+}
+
 .b--light
 {
     border: 1px solid var(--color-border-light);
 }
 
-.button__default
-{
 
-    background: none;
+/*--button--*/
+.btn
+{
+    display: inline-block;
+}
+
+.btn-link
+{
+    background-color: transparent;
+}
+
+.btn--border1
+{
+    border: 1px solid var(--color-inverse-text);
+}
+
+.btn--border-none
+{
     border: none;
 }
 
-.icon__size
+/*--spacing--*/
+.top--1
+{
+    top: 50%;
+}
+
+.left--1
+{   
+    left: 2.4rem;
+}
+
+.left--2
+{
+    left: 50%;
+}
+
+.bottom--1
+{
+    bottom: 2.4rem;
+}
+
+.form-btn--position
+{
+    right: var(--spacing-3);
+    top: var(--spacing-3);
+}
+
+.max-wh--1
 {
     max-width: 2rem;
     max-height: 2rem;
 }
 
-.img__style
+.max-wh--2
+{
+    max-width: 19.4rem;
+    max-height: 4rem;
+}
+
+.max-wh--logo
+{
+    max-width: 9rem;
+    max-height: 2.2rem;
+}
+
+
+.wh--1
 {
     width: 100%;
     height: 100%;
 }
 
-.vector--style-cart
+.width--1
 {
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
+}
+
+.width--4
+{
+    width: var(--spacing-6);
+}
+
+.height--4
+{
+    height: var(--spacing-6);
+}
+
+.height--1
+{
+    height: 100%;
+}
+
+.padding--1
+{
+    padding: var(--padding-1) var(--padding-2);
+}
+
+.padding--2
+{
+    padding: var(--spacing-4);
+}
+
+.padding--3
+{
+    padding: var(--spacing-1);
+}
+
+.padding--4
+{
+    padding: var(--spacing-1) 0;
+}
+
+.padding--5
+{
+    padding: var(--spacing-3) var(--spacing-5);
+}
+
+.padding--6
+{
+    padding: var(--spacing-7) var(--spacing-6);
+}
+
+.margin--1
+{
+    margin-top: var(--margin-1);
+}
+
+.margin--2
+{
+    margin-bottom: var(--spacing-5);
+}
+
+.gap--08
+{
+    gap: var(--gap-1);
+}
+
+.gap--1
+{
+    gap: var(--spacing-2);
+}
+
+.gap--14
+{
+    gap: var(--spacing-1);
+}
+
+.gap--16
+{
+    gap: var(--spacing-4);
+}
+
+.gap--24
+{
+    gap: var(--spacing-5);
+}
+
+.gap--4 
+{
+    gap: var(--spacing-6);
+}
+
+
+.r-gap--4
+{
+    row-gap: var(--spacing-5);
+}
+
+
+/*--another--*/
+.t-decor--none
+{
+    text-decoration: none;
+}
+
+.l-style--none
+{
+    list-style-type: none;
+}
+
+/*--position--*/
+.p--absolute
+{
+    position: absolute;
+}
+
+
+.p--relative
+{
+    position: relative;
+}
+
+
+
+/*--display--*/
+.d-flex
+{
+    display: flex;
+}
+
+.d-flex--cl
+{
+    flex-direction: column;
+}
+
+.d-flex---row-cl
+{
+    flex-direction: var( --f-direction-row-cl);
+}
+
+.d-iblock
+{
+    display: inline-block;
+}
+
+.d-grid
+{
+    display: grid;
+}
+
+.d-grid--layout1
+{
+    grid-template-columns: auto 1fr auto;
+}
+
+.d-grid--layout2
+{
+    grid-template-columns: var(--grid-layout-1);
+}
+
+.d-grid--layout3
+{
+    grid-template-columns: var(--grid-layout-2);
+    grid-template-rows: var(--grid-layout-3);
+}
+
+.p-item--center
+{
+    place-items: center;
+}
+
+.t-align--center
+{
+    text-align: center;
+}
+
+.a-item--center
+{
+    align-items: center;
+}
+
+.j-content--center
+{
+    justify-content: center;
+}
+
+.j-content--sb
+{
+    justify-content: space-between;
+}
+
+
+/*--Font--*/
+.font-w
+{
+    font-weight: var(--font-weight);
 }
 
 .body1
@@ -82,58 +332,6 @@ html
     line-height: var(--heading-line-height);
 }
 
-.a__style
-{
-    display: block;
-    height: 100%;
-}
-
-.t-decor--none
-{
-    text-decoration: none;
-}
-
-.l-style--none
-{
-    list-style-type: none;
-}
-
-.d-flex
-{
-    display: flex;
-}
-
-.d-flex--cl
-{
-    flex-direction: column;
-}
-
-.t-align--center
-{
-    text-align: center;
-}
-
-.a-item--center
-{
-    align-items: center;
-}
-
-.j-content--center
-{
-    justify-content: center;
-}
-
-.d-grid
-{
-    display: grid;
-}
-
-.font--ws
-{
-    font-weight: var(--font-weight);
-    font-style: normal;
-}
-
 .l-spacing--2
 {
     letter-spacing: var(--letter-spacing-2);
@@ -149,6 +347,8 @@ html
     letter-spacing: var(--letter-spacing-4);
 }
 
+
+/*--color--*/
 .c-background1
 {
     color: var(--color-background1);
@@ -192,4 +392,30 @@ html
 .c-inverse-text
 {
     color: var(--color-inverse-text);
+}
+
+.bc-background1
+{
+    background-color: var(--color-background1);
+}
+
+.bc-background2
+{
+    background-color: var(--color-background2);
+}
+
+.bc-background3
+{
+    background-color: var(--color-background3);
+}
+
+/*--border--*/
+.border-bottom
+{
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.border-top
+{
+    border-top: 1px solid var(--color-border-light);
 }

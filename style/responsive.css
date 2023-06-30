@@ -5,6 +5,19 @@
         --font-size-h-medium: calc(2 * var(--root-font-size));
         --font-size-h-large: calc(3 * var(--root-font-size));
         --font-size-h-exlarge: calc(4 * var(--root-font-size));
+
+        --gap-1: 0;
+
+        --padding-1: 1.2rem;
+        --padding-2: 1rem;
+
+        --margin-1: 10.4rem;
+
+        --grid-layout-1: repeat(2, 1fr);
+
+        --container: 0 1rem 2.4rem 1rem;
+
+        --f-direction-row-cl: column;
     }
 
     .mobile__style
@@ -14,14 +27,24 @@
         font-weight: 600;
     }
 
-    .m-hor--64
+    .m-hor
     {
         margin: auto 1rem;
     }
 
-    .m-ver--64
+    .m-ver
     {
         margin: 4rem auto;
+    }
+
+    .d-none-grid
+    {
+        display: grid;
+    }
+
+    .d-none-flex
+    {
+        display: flex;
     }
 
     .d-none
@@ -34,20 +57,9 @@
         display: block;
     }
 
-    .d-gird__header
+    .toggle
     {
-        padding: 1.9rem 0;
-    }
-
-    .toggle-menu
-    {
-        display: flex;
-    }
-
-    .toggle__icon
-    {
-        max-width: 4rem;
-        max-height: 4rem;
+        display: inline-block;
     }
 
     .header__title
@@ -56,46 +68,34 @@
         border-bottom: 1px solid var(--color-border-light);
     }
 
-    .header__img
+    .header-icon--spacing
     {
-        display: grid;
-        place-items: center;
+        gap: var(--spacing-2);
     }
 
-    .nav-icon__container
-    {
-        gap: 1.4rem;
-
-    }
-
-
-    .header__main {
+    #nav-responsive {
         position: fixed;
-        top: 11.8rem;
-        left: 0;
-        margin: 0;
-        max-width: 33.6rem;
-        width: 100%;
-        height: calc(100vh - 11.8rem);
+        top: 10.25rem;
+        left: -100%;
+        width: 70%;
+        height: calc(100vh - 10.2rem);
         border: 1px solid var(--color-border-light);
         grid-template-rows: 1fr auto;
-        transition: transform 0.3s ease, visibility 0s;
-        transform: translateX(-100%);
+        transition: 0.5s;
         visibility: hidden;
     }
-    
-    .header__main.open {
-        transform: translateX(0);
+
+    #nav-responsive.active
+    {
+        left: -60px;
         visibility: visible;
-        transition-delay: 0s;
     }
 
     .sub-menu__container {
         top: 0;
         left: 0;
         background-color: var(--color-background1);
-        width: 100%;
-        height: calc(100vh - 11.8rem);
+        height: calc(100vh - 10.2rem);
         max-width: none;
         transform: translateX(100%);
         border: 0;
@@ -162,7 +162,6 @@
 
     .banner__item
     {
-        margin-top: 11.8rem;
         background: url(../img/Banner/Frame101.png);
         background-size: cover;
         background-position: center;

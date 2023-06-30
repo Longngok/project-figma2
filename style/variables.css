@@ -2,6 +2,7 @@
 {
     --color-background1: #FFFFFF;
     --color-background2: #F0F0F0;
+    --color-background3: rgba(0, 0, 0, 0.5);
     --color-border-dark: #7D7D7D;
     --color-border-light: #D0D0D0;
     --color-accent1: #000000;
@@ -27,4 +28,30 @@
     --letter-spacing-2: 0.02em;
     --letter-spacing-3: 0.03em;
     --letter-spacing-4: 0.04em;
+
+    --percent-100: 100%;
+
+    --gap-1: 0.8rem;
+
+
+    --spacing-1: 0.8rem;
+    --spacing-2: 1rem;
+    --spacing-3: 1.4rem;
+    --spacing-4: 1.6rem;
+    --spacing-5: 2.4rem;
+    --spacing-6: 4rem;
+    --spacing-7: 6.4rem;
+
+    --padding-1: 1.6rem;
+    --padding-2: 6.4rem;
+
+    --margin-1: 7.1rem;
+
+    --grid-layout-1: repeat(4, 1fr);
+    --grid-layout-2: repeat(3, 1fr);
+    --grid-layout-3: repeat(2, 1fr);
+
+    --container: 0 6.4rem 6.4rem 6.4rem;
+
+    --f-direction-row-cl: row;
 }
