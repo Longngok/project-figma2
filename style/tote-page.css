@@ -123,10 +123,24 @@
     gap: 4rem;
 }
 
-.d-grid__detail
+.grid__area
 {
-    max-width: 70%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(8,auto);
+    grid-area: 
+    "item1 item1"
+    "item1 item1"
+    "item2 item3"
+    "item4 item5"
+    "item6 item7"
+    "item8 item9"
+    "item10 item10"
+    "item10 item10";
+}
+
+.d-grid__layout10
+{
+    grid-template-columns: 1fr 1fr auto;
     gap: 1em;
 }
 

@@ -1,36 +1,65 @@
-function togglebar()
-{
-  document.getElementById('nav-responsive').classList.toggle('active');
-  document.getElementById('togglebar').classList.toggle('change')
-  // document.body.style.backgroundColor = "black";
+function togglebar() {
+  var navResponsiveElements = document.getElementsByClassName('res-menu');
+  var togglebarElements = document.getElementsByClassName('toggle');
+
+  for (var i = 0; i < navResponsiveElements.length; i++) {
+    navResponsiveElements[i].classList.toggle('active');
+  }
+
+  for (var j = 0; j < togglebarElements.length; j++) {
+    togglebarElements[j].classList.toggle('change');
+  }
+}
+
+function openFS() {
+  var menuRP = document.getElementsByClassName('res-menu--2')[0];
+  menuRP.classList.toggle('active');
+}
+
+function closeFS() {
+  var menuRP = document.getElementsByClassName('res-menu--2')[0];
+  menuRP.classList.remove('active');
 }
 
 function toggleSubMenu(event) {
   event.preventDefault();
-  var submenuContainer = event.currentTarget.parentNode.querySelector('.sub-menu__container');
-  submenuContainer.classList.toggle('show');
+  var subMenu = event.currentTarget.nextElementSibling;
+  subMenu.classList.toggle('active');
 }
 
-var backButton = document.querySelector('.sub-menu__container .d-none--rp');
+
+
+/*---submenu---*/
+function toggleSubMenu(event) {
+  event.preventDefault();
+  var clickedSubMenuContainer = event.currentTarget.parentNode.querySelector('.sub-menu__container');
+  
+  var allSubMenuContainers = document.querySelectorAll('.sub-menu__container');
+  for (var i = 0; i < allSubMenuContainers.length; i++) {
+    if (allSubMenuContainers[i] !== clickedSubMenuContainer) {
+      allSubMenuContainers[i].classList.remove('show');
+    }
+  }
+  
+  clickedSubMenuContainer.classList.toggle('show');
+  
+  var backButton = clickedSubMenuContainer.querySelector('.button__back');
+  backButton.classList.remove('show');
+}
+
+var backButton = document.querySelector('.sub-menu__container .button__back');
 backButton.addEventListener('click', function(event) {
   event.preventDefault();
   var submenuContainer = backButton.parentNode;
   submenuContainer.classList.remove('show');
+  
+  var parentSubMenuContainer = submenuContainer.parentNode.parentNode;
+  var parentBackButton = parentSubMenuContainer.querySelector('.button__back');
+  parentBackButton.classList.add('show');
 });
 
-// function toggleImage(event, imgId) {
-//   event.preventDefault();
-//   var imgElement = document.getElementById(imgId);
-  
-//   if (imgElement.src.endsWith('img/icon/Vector11.png')) {
-//     imgElement.src = 'img/icon/close.png'; // Thay đổi đường dẫn hình ảnh mới
-//   } else {
-//     imgElement.src = 'img/icon/Vector11.png'; // Quay lại hình ảnh ban đầu
-//   }
-// }
 
-
-
+/*---video play---*/
 var video = document.getElementById("my-video");
 var playButton = document.getElementById("play-button");
 var isPlaying = false;
@@ -50,6 +79,9 @@ video.addEventListener("click", toggleVideoPlay);
 playButton.addEventListener("click", toggleVideoPlay);
 
 
+
+
+/*--subcribe confirm---*/
 var footerBtn = document.getElementById("footer-btn")
 
 function toogleConfirm(){
@@ -68,25 +100,7 @@ function toogleConfirm(){
 
 footerBtn.addEventListener("click", toogleConfirm);
 
-fetch('header.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
-  });
-
-
-  function decreaseQuantity() {
-    var quantityInput = document.getElementById('quantity');
-    var quantity = parseInt(quantityInput.value);
-
-    if (quantity > 0) {
-      quantityInput.value = quantity - 1;
-    }
-  }
-
-  function increaseQuantity() {
-    var quantityInput = document.getElementById('quantity');
-    var quantity = parseInt(quantityInput.value);
-    
-    quantityInput.value = quantity + 1;
-  }
+function openfs()
+{
+  
+}

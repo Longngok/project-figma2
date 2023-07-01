@@ -27,12 +27,12 @@
             </div>
 
             <div class="d-grid p-item--center res-spacing--2">
-                <a class="d-iblock"  href="#">
+                <a class="d-iblock"  href="index.html">
                     <img class="max-wh--logo" src="img/icon/Dawn-logo.png" alt="">
                 </a>
             </div>
 
-           <div class="d-grid slide-menu res-menu res-menu--form1">
+           <div class="d-grid res-menu res-menu--form1">
                 <nav class="res-menu--top bc-background1">
                     <ul class="l-style--none d-flex gap--16 res-spacing--1">
                         <li class="p--rt-st">
@@ -105,140 +105,188 @@
             </ul>
         </div>
     </header>
-
+    
     <main class="res-mtop--1">
-        <section class="banner">
-            <div class="banner__item width--1 d-grid p-item--center">
-                <div class="banner__block d-flex d-flex--cl a-item--center t-align--center bc-background3 c-inverse-text">
-                    <h1 class="font-w heading0 heading-lh">Industrial design meets fashion</h1>
-                    <p class="body1">Atypical leather goods</p>
-                    <button class="btn btn-link button-text btn--border1 c-inverse-text padding--2" href="">Add to cart</button>
-                </div>
-            </div>
-        </section>
+        <section class="tote-bags">
+            <div class="container d-flex d-flex--cl" style="gap:3.2rem;">
+                <h1 class="heading1 heading-lh c-default-text res-mtop--2">Tote Bags</h1>
 
-        <section class="content">
-            <div class="container">
-                <div class="d-grid p-item--center res-gap--32 res-spacing--3 t-align--center c-default-text">
-                    <h2 class="font-w heading1 heading-lh">Obsessive Attention. Intelligent Effort.</h2>
-                    <p class="body1">Functional handbags made of luxurious and honest materials to improve people's lives in small but mighty ways.</p>
-                </div>
+                <aside class="d-flex j-content--sb">
+                    <div>
+                        <button id="fs-btn" class="d-none-flex a-item--center gap--1 btn btn-link btn--border-none" onclick="openFS()">
+                            <img class="max-wh--1" src="img/icon/filterandsort.png" alt="">
+                            <span class="body2 c-default-text">Filter and sort</span>
+                        </button>
+
+                        <div class="d-flex-grid gap--24  res-menu--2 bc-background1  z-index--10">
+                            <h2 class="body2 c-default-text colon-af d-block-none">Filter</h2>
+                            <div class="d-none-flex j-content--center p--relative border-bottom res-spacing--8">
+                                <div class="d-flex d-flex--cl">
+                                    <h2>Filter and sort</h2>
+                                    <span>6 of 6 product</span>
+                                </div>
+                                <button class="p--absolute btn btn-link btn--border-none max-wh--1" style="right: 20px; top: 3px;" onclick="closeFS()"><img src="./img/icon/close.png" alt=""></button>
+                            </div>
+                            <ul class="d-flex d-flex---row-cl l-style--none gap--24 p--relative res-menu--top">
+                                <li class="p--rt-st">
+                                    <a class="hover-underline d-flex a-item--center j-content--sb res-gap--08" href="#" onclick="toggleSubMenu(event)">
+                                        <span class="body2 c-default-text mobile__style">Avalability</span>
+                                        <img class="change-img max-wh--1 res-icon--change" id="img-scr1" src="img/icon/Vector11.png" alt="drop-down">
+                                    </a>
+                                    <div class="sub-menu__container sub-menu--width--2 z-index--10">
+                                        <button class="btn btn-link btn--border-none d-none-flex a-item--center res-gap--1 res-spacing--4" onclick="toggleSubMenu(event)">
+                                            <img class="max-wh--1" src="img/icon/arrow left.png" alt="back">
+                                            <span class="body2">Back</span>
+                                        </button>
+                                        <div class="d-flex d-flex--cl l-style--none">
+                                            <div class="border-bottom d-flex-none j-content--sb res-spacing--8">
+                                                <span class="body2">1 selected</span>
+                                                <a class="body2" href="">Reset</a>
+                                            </div>
+                                            <form class="d-flex d-flex--cl res-gap--4 res-spacing--8" action="">
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">In stock</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Out of stock</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="p--rt-st">
+                                    <a class="hover-underline d-flex a-item--center j-content--sb res-gap--08" href="#" onclick="toggleSubMenu(event)">
+                                        <span class="body2 c-default-text mobile__style">Price</span>
+                                        <img class="change-img max-wh--1 res-icon--change" id="img-scr1" src="img/icon/Vector11.png" alt="drop-down">
+                                    </a>
+                                    <div class="sub-menu__container sub-menu--width--2 z-index--10">
+                                        <button class="btn btn-link btn--border-none d-none-flex a-item--center res-gap--1 res-spacing--4" onclick="toggleSubMenu(event)">
+                                            <img class="max-wh--1" src="img/icon/arrow left.png" alt="back">
+                                            <span class="body2">Back</span>
+                                        </button>
+                                        <div class="d-flex d-flex--cl l-style--none">
+                                            <div class="border-bottom-none d-flex j-content--sb res-spacing--8">
+                                                <span class="body2">The highest price is $615.00</span>
+                                                <a class="body2 d-block-none" href="">Reset</a>
+                                            </div>
+                                            <form class="d-flex res-gap--4 res-spacing--8" action="">
+                                                <input class="input-number" type="number" placeholder="Form">
+                                                <input class="input-number" type="number" placeholder="To">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="p--rt-st">
+                                    <a class="hover-underline d-flex a-item--center j-content--sb res-gap--08" href="#" onclick="toggleSubMenu(event)">
+                                        <span class="body2 c-default-text mobile__style">Color</span>
+                                        <img class="change-img max-wh--1 res-icon--change" id="img-scr1" src="img/icon/Vector11.png" alt="drop-down">
+                                    </a>
+                                    <div class="sub-menu__container sub-menu--width--2 z-index--10">
+                                        <button class="btn btn-link btn--border-none d-none-flex a-item--center res-gap--1 res-spacing--4" onclick="toggleSubMenu(event)">
+                                            <img class="max-wh--1" src="img/icon/arrow left.png" alt="back">
+                                            <span class="body2">Back</span>
+                                        </button>
+                                        <div class="d-flex d-flex--cl">
+                                            <div class="border-bottom d-flex-none j-content--end res-spacing--8">
+                                                <a class="body2" href="">Reset</a>
+                                            </div>
+                                            <form class="res-spacing--8 d-flex d-flex--cl res-gap--4" action="">
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Butter</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Chocolate</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Demin</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Dry Rose</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Emerald</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Latte</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Milky</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Oceania</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Off White</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Olive Leaf</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Pastel</label>
+                                                </div>
+
+                                                <div>
+                                                    <input class="checkbox" type="checkbox" name="" id="">
+                                                    <label class="body2" for="">Pink Cloud</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="d-none-flex j-content--sb">
+                                    <h2>Sort by</h2>
+                                    <a class="hover-underline d-flex a-item--center j-content--sb res-gap--08" href="#" onclick="toggleSubMenu(event)">
+                                        <span class="body2 c-default-text mobile__style">Best Selling</span>
+                                        <img class="change-img max-wh--1" id="img-scr1" src="img/icon/Vector11.png" alt="drop-down">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="d-none-flex a-item--center j-content--center border-top res-spacing--8">
+                                <button class="res-spacing--8 btn btn-link btn--border-none body2">Clear All</button>
+                                <button class="res-spacing--8 btn btn-primary btn--border-none button-text c-inverse-text">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap--1">
+                        <h2 class="d-block-none body2 c-default-text colon-af d-block-none">Sort by</h2>
+                        <a class="hover-underline d-flex-none a-item--center j-content--sb res-gap--08" href="#" onclick="toggleSubMenu(event)">
+                            <span class="body2 c-default-text mobile__style">Best Selling</span>
+                            <img class="change-img max-wh--1 res-icon--change" id="img-scr1" src="img/icon/Vector11.png" alt="drop-down">
+                        </a>
+                        <span class="body2">6 product</span>
+                    </div>
+                </aside>
 
                 <div class="d-grid d-grid--layout2 gap--1 r-gap--24 c-default-text">
-                    <div class="d-grid__item">
-                        <div class="card">
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image1.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Hobo Small</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$195.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card">
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image2.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Bo Soft Strap</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$365.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card">
-                            <a href="" class="d-iblock width--1">
-                                <img class="card-img wh--1" src="img/content/image1.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Hobo Small</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$195.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card "> 
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image2.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Bo Soft Strap</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$365.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card ">
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image3.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Hobo Small</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$195.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card ">
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image4.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                            <h3 class="card-title body2">Bo Soft Strap</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$365.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card ">
-                            <a class="d-iblock width--1" href="">
-                                <img class="card-img wh--1" src="img/content/image5.png" alt="hinh-anh-san-pham">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Hobo Large</h3>
-                                <div class="d-flex">
-                                    <span class="body1">$615.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card">
-                            <a class="d-iblock width--1 p--relative" href="">
-                                <img class="card-img wh--1" src="img/content/image6.png" alt="hinh-anh-san-pham">
-                                <span class="sale-icon caption1 c-inverse-text">Sale</span>
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title body2">Storml</h3>
-                                <div class="d-flex d-flex---row-cl a-item--cs res-gap--3">
-                                    <span class="body2 t-decor--lt">$545.00 CAD</span>
-                                    <span class="body1">$195.00 CAD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="d-grid__item">
                         <div class="card ">
                             <a class="d-iblock width--1" href="">
@@ -295,69 +343,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="stock">
-            <div class="container c-default-text">
-                <h2 class="font-w heading2 heading-lh margin--2">Back in stock</h2>
-                <div class="d-grid d-grid--layout3 gap--1">
-                    <div class="d-grid__item">
-                        <div class="card wh--1 d-flex d-flex--cl">
-                            <img class="card-img wh--1" src="img/stock/Rectangle1.png" alt="">
-                            <a href="" class="card-body d-flex a-item--center padding--5 gap--14 bc-background2 hover-underline">
-                                <span class="body2 c-default-text" href="">Bags</span>
-                                <img class="max-wh--1" src="img/stock/Vector.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card wh--1 d-flex d-flex--cl">
-                            <img class="card-img wh--1" src="img/stock/Rectangle2.png" alt="">
-                            <a href="" class="card-body d-flex a-item--center padding--5 gap--14 bc-background2 hover-underline">
-                                <span class="t-decor--none body2 c-default-text" href="">Bags</span>
-                                <img class="max-wh--1" src="img/stock/Vector.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="d-grid__item">
-                        <div class="card wh--1 p--relative">
-                            <img class="card-img wh--1" src="img/stock/Rectangle3.png" alt="">
-                            <div class="card-body p--absolute bottom--1 left--1 c-default-text">
-                                <h3 class="body2">Mini Eddy</h3>
-                                <span class="body2">$375.00 CAD</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="video">
-            <div class="container p--relative">
-                <video id="my-video" style="width: 100%; position: relative;" src="img/video/TRAILER_FASHION.mp4"></video>
-                <button  id="play-button" class="btn btn-play p--absolute top--1 left--2 d-grid p-item--center bc-background2">
-                    <img class="max-wh--1" src="img/video/play_button.png" alt="trailer-san-pham">
-                </button>
-            </div>
-        </section>
-          
-                
-        <section class="describe">
-            <div class="container">
-                <div class="d-flex d-flex---row-cl font-w">
-                    <div class="d-grid p-item--center padding--2 gap--16">
-                        <img class="max-wh--2" src="img/stock/Rectangle15.png" alt="logo">
-                        <p class="body1 t-align--center">"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."</p>
-                    </div>
-
-                    <div class="d-grid p-item--center padding--2 gap--16">
-                        <img class="max-wh--2" src="img/stock/Rectangle16.png" alt="logo">
-                        <p class="body1 t-align--center">"All too often, we're forced to pick: style, or sustainability. Recently, more designers have been making environmental impact a top priority"</p>
                     </div>
                 </div>
             </div>
@@ -458,9 +443,9 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
